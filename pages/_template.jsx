@@ -20,12 +20,10 @@ module.exports = React.createClass({
           wrapperStyle={{
             marginBottom: rhythm(1),
           }}
-          style={{
-            background: '#252525'
-          }}
         >
           <Container
             style={{
+              margin: '0',
               maxWidth: 960,
               paddingTop: 0,
               padding: `${rhythm(1)} ${rhythm(3/4)}`,
@@ -34,20 +32,20 @@ module.exports = React.createClass({
             <Link
               to={prefixLink('/')}
               style={{
-                color: 'white',
+                color: 'black',
                 textDecoration: 'none',
+                textTransform: 'uppercase',
+                fontFamily: 'Roboto',
+                fontWeight: '700'
               }}
             >
-              Your Brand!
-            </Link>
-            <Link
-              to={prefixLink('/about')}
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-              }}
-            >
-              About Spencer
+              Spencer
+              <span style={{
+                fontWeight: '100',
+                marginLeft: 5,
+              }}>
+                Dixon
+              </span>
             </Link>
           </Container>
         </Headroom>

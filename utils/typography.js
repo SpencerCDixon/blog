@@ -7,16 +7,16 @@ import CodePlugin from 'typography-plugin-code'
 const options = {
   googleFonts: [
     {
-      name: 'Montserrat',
+      name: 'Raleway',
       styles: [
-        '700',
+        '100',
       ],
     },
     {
-      name: 'Arvo',
+      name: 'Open Sans',
       styles: [
+        '300',
         '400',
-        '400i',
         '700',
       ],
     },
@@ -24,16 +24,17 @@ const options = {
       name: 'Roboto',
       styles: [
         '100',
-        '300',
-        '400',
         '700'
       ]
     }
   ],
-  headerFontFamily: ['Roboto', 'sans-serif'],
-  bodyFontFamily: ['Roboto', 'sans-serif'],
+  headerFontFamily: ['Raleway', 'sans-serif'],
+  headerWeight: '100',
+  bodyFontFamily: ['Open Sans', 'sans-serif'],
+  bodyWeight: '300',
   baseFontSize: '18px',
   baseLineHeight: 1.65,
+  boldWeight: '700',
   scale: 2.25,
   plugins: [
     new CodePlugin(),
