@@ -19,6 +19,8 @@ export default class Index extends React.Component {
           Hello World!
         </h1>
         <p>Welcome to your new clean Gatsby site</p>
+        <Link to={prefixLink('blog/')}>Blog</Link>
+        <Link to={prefixLink('about/')}>About</Link>
       </div>
     )
   }

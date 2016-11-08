@@ -40,6 +40,15 @@ module.exports = React.createClass({
             >
               Your Brand!
             </Link>
+            <Link
+              to={prefixLink('/about')}
+              style={{
+                color: 'white',
+                textDecoration: 'none',
+              }}
+            >
+              About Spencer
+            </Link>
           </Container>
         </Headroom>
         <Container
