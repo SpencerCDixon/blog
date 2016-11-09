@@ -1,40 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import Headroom from 'react-headroom'
-import { Flex, Box } from 'reflexbox';
-import Logo from '../components/Logo';
-import NavLink from '../components/NavLink';
-import '../css/markdown-styles'
+import NavBar from '../components/NavBar';
+import 'css/markdown-styles'
+import 'css/headroom'
 
 import { rhythm } from '../utils/typography'
 
-module.exports = React.createClass({
-  propTypes () {
-    return {
-      children: React.PropTypes.any,
-    }
-  },
+export default class MainLayout extends Component { 
   render () {
     return (
       <div>
-        <Headroom
-          wrapperStyle={{
-            marginBottom: rhythm(1),
-          }}
-        >
-          <Flex py={2} px={3}>
-            <Box> <Logo /> </Box>
-            <Box flexAuto/>
-            <Flex>
-              <Box px={1}> <NavLink to="/blog/">Blog</NavLink> </Box>
-              <Box px={1}> <NavLink to="/about/"> About </NavLink> </Box>
-              <Box px={1}> <NavLink to="now">Now</NavLink> </Box>
-              <Box px={1}> <NavLink to="book">Book</NavLink> </Box>
-            </Flex>
-          </Flex>
-        </Headroom>
+        <NavBar />
         <Container
           style={{
             maxWidth: 960,
@@ -46,5 +23,5 @@ module.exports = React.createClass({
         </Container>
       </div>
     )
-  },
-})
+  }
+}

@@ -13,6 +13,7 @@ const sx = StyleSheet.create({
     fontWeight: fonts.xThin,
     color: colors.lightGray,
     textDecoration: 'none',
+    fontSize: '1.3em',
     ':hover': {
       color: colors.black,
     }
@@ -28,5 +29,7 @@ function NavLink({to, children}) {
 }
 
 NavLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node,
 };
 export default NavLink;
