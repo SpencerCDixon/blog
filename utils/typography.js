@@ -16,6 +16,7 @@ const options = {
       name: 'Open Sans',
       styles: [
         '300',
+        '300i',
         '400',
         '700',
       ],

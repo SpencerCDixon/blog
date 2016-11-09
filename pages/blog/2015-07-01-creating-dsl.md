@@ -69,7 +69,7 @@ module CustomDsl
   def included(base_class)
     base_class.extend(DslClassMethods)
   end
-  # ... emitted ...
+  # ... omitted ...
 end
 
 module DslClassMethods
