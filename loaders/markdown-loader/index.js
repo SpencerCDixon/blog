@@ -30,6 +30,8 @@ var md = markdownIt({
   .use(require('markdown-it-deflist'))
   .use(require('markdown-it-abbr'))
   .use(require('markdown-it-attrs'))
+  .use(require('markdown-it-emoji'))
+  .use(require('markdown-it-container', 'warning'))
 
 module.exports = function (content) {
   this.cacheable()

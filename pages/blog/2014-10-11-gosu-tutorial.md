@@ -41,9 +41,8 @@ programmer.
   * [Using Mouse & Keys](#keys)  
   * [Combining Keys & Bounding Boxes](#keys_bounding)  
 
-<!--more-->
 
-###<a name="install"></a> Installation 
+### Installation 
 
 The first step is to install the Gosu Gem:  
 
@@ -60,7 +59,7 @@ was made for an older version of ruby (1.8, 1.9).  Even with the errors it
 still works fine on my computer when running ruby 2.0.
 
 
-###<a name="start"></a> Getting Started With Gosu 
+### Getting Started With Gosu 
 
 The first step is to make a new directory to store our new Gosu game in.  Then
 we will change into the directory and start making some more directories and

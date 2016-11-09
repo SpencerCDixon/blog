@@ -58,13 +58,7 @@ const BlogIndex = (props) => {
   });
 
   return (
-    <Container
-      style={{
-        maxWidth: rhythm(24),
-        padding: `0 ${rhythm(1)}`,
-        margin: 'auto',
-      }}
-    >
+    <div>
       <h1>Featured</h1>
       <ul
         style={{
@@ -83,7 +77,7 @@ const BlogIndex = (props) => {
       >
         {pageLinks}
       </ul>
-    </Container>
+    </div>
   );
 };
 

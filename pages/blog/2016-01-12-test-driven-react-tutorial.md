@@ -64,7 +64,9 @@ npm init        # follow along with normal npm init to set up project
 npm i babel-loader babel-core webpack --save-dev
 ```
 
-> `npm i` is an alias for npm install.  
+::: warning
+*`npm i` is an alias for npm install.*
+:::
 
 Next lets set up our project directory and create a `webpack.config.js` file:
 
