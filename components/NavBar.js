@@ -12,7 +12,7 @@ function NavBar() {
         marginBottom: rhythm(1),
       }}
     >
-      <Flex py={3} px={4} wrap justify="center">
+      <Flex py={2} px={4} wrap justify="center">
         <Box> <Logo /> </Box>
         <Box flexAuto/>
         <Flex>
