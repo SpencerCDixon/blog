@@ -1,6 +1,7 @@
 export const colors = {
   lightGray: '#7E899B',
   black: '#000',
+  linkBlue: '#4990E2',
 };
 
 export const fonts = {

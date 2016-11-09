@@ -151,6 +151,7 @@ blockquote {
   font-size: 1.5em;
   font-style: italic;
   font-weight: 300;
+  line-height: 1.4;
   color: rgba(0,0,0,0.6);
   padding-left: 50px;
   font-family: 'Open Sans';

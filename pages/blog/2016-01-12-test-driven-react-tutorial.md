@@ -4,6 +4,7 @@ title: Test Driven React Tutorial
 path: "/test-driven-react-tutorial/"
 date: 2016-01-12 21:55 UTC
 tags: tutorial, testing, react, javascript
+featured: true
 ---
 
 Testing is an important part of the development cycle.  There is a name for code

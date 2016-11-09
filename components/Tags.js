@@ -7,9 +7,9 @@ function Tags({ tags }) {
     <Flex>
       {tags.map((tag, i) => {
         if (i === 0) {
-          return <Box mr={1}><Tag> {tag} </Tag></Box>
+          return <Box mr={1} key={tag}><Tag> {tag} </Tag></Box>
         } else {
-          return <Box mx={1}><Tag> {tag} </Tag></Box>
+          return <Box mx={1} key={tag}><Tag> {tag} </Tag></Box>
         }
       })}
     </Flex>

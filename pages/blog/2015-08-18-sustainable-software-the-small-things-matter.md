@@ -3,6 +3,7 @@ layout: post
 title: "Sustainable Software: The Small Things Matter"
 date: 2015-08-18 20:45 UTC
 tags: sustainability, software, design
+featured: true
 ---
 
 Sustainable software is the difference between happy productive developers and

@@ -3,6 +3,7 @@ layout: post
 title: Gosu Tutorial
 date: 2014-10-11 
 tags: ruby, gosu, tutorials
+featured: true
 ---
 
 # Getting Started With Gosu
