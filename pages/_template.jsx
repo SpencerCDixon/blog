@@ -3,6 +3,9 @@ import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
+import { Flex, Box } from 'reflexbox';
+import Logo from '../components/Logo';
+import NavLink from '../components/NavLink';
 import '../css/markdown-styles'
 
 import { rhythm } from '../utils/typography'
@@ -21,33 +24,16 @@ module.exports = React.createClass({
             marginBottom: rhythm(1),
           }}
         >
-          <Container
-            style={{
-              margin: '0',
-              maxWidth: 960,
-              paddingTop: 0,
-              padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            }}
-          >
-            <Link
-              to={prefixLink('/')}
-              style={{
-                color: 'black',
-                textDecoration: 'none',
-                textTransform: 'uppercase',
-                fontFamily: 'Roboto',
-                fontWeight: '700'
-              }}
-            >
-              Spencer
-              <span style={{
-                fontWeight: '100',
-                marginLeft: 5,
-              }}>
-                Dixon
-              </span>
-            </Link>
-          </Container>
+          <Flex py={2} px={3}>
+            <Box> <Logo /> </Box>
+            <Box flexAuto/>
+            <Flex>
+              <Box px={1}> <NavLink to="/blog/">Blog</NavLink> </Box>
+              <Box px={1}> <NavLink to="/about/"> About </NavLink> </Box>
+              <Box px={1}> <NavLink to="now">Now</NavLink> </Box>
+              <Box px={1}> <NavLink to="book">Book</NavLink> </Box>
+            </Flex>
+          </Flex>
         </Headroom>
         <Container
           style={{
