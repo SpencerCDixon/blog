@@ -13,7 +13,7 @@ const sx = StyleSheet.create({
     fontWeight: fonts.xThin,
     color: colors.lightGray,
     textDecoration: 'none',
-    fontSize: '1.3em',
+    fontSize: fonts.nav,
     ':hover': {
       color: colors.black,
     }
@@ -22,7 +22,11 @@ const sx = StyleSheet.create({
 
 function NavLink({to, children}) {
   return (
-    <Link to={prefixLink(to)} className={css(sx.base)} activeClassName={css(sx.active)}>
+    <Link 
+      to={prefixLink(to)} 
+      className={css(sx.base)} 
+      activeClassName={css(sx.active)}
+    >
       {children}
     </Link>
   );
