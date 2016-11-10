@@ -1,0 +1,19 @@
+@import "css/_variables";
+
+.button {
+  color: $link;
+  border: 2px solid $link;
+  padding: 12px 20px;
+  border-radius: 3px;
+  display: inline-block;
+  &:hover {
+    border-color: $black;
+    color: $black;
+    cursor: pointer;
+  }
+}
+
+.text {
+  font-family: $secondary;
+  font-weight: $thin;
+}

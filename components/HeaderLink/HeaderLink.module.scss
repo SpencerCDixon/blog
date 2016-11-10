@@ -1,0 +1,12 @@
+@import "css/_variables";
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  color: $link;
+  &:hover {
+    color: $black;
+  }
+}

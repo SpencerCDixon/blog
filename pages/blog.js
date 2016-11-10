@@ -7,7 +7,7 @@ import { rhythm } from 'utils/typography';
 import access from 'safe-access';
 import { prune, include as includes } from 'underscore.string';
 import { Container } from 'react-responsive-grid';
-import HeaderLink from '../components/HeaderLink.js';
+import HeaderLink from 'components/HeaderLink';
 
 function sortByDate(posts) {
   return sortBy(posts, post => access(post, 'data.date')).reverse();
