@@ -1,0 +1,16 @@
+@import "css/_variables.scss";
+
+.active {
+  color: $black !important;
+}
+
+.base {
+  color: $lightGray;
+  text-decoration: none;
+  font-family: $secondary;
+  font-weight: $xThin;
+  font-size: $nav;
+  &:hover {
+    color: $black;
+  }
+}

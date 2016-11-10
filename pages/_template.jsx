@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import NavBar from '../components/NavBar';
-import 'css/markdown-styles'
-import 'css/headroom'
+import 'css/index.scss'
 
 import { rhythm } from '../utils/typography'
 
