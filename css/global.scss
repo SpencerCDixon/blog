@@ -1,0 +1,21 @@
+@import "_variables";
+
+// Makes it too thin IMO
+// *,
+// *:after,
+// *:before {
+  // box-sizing: border-box;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // font-smoothing: antialiased;
+  // text-rendering: optimizeLegibility;
+// }
+
+a {
+  text-decoration: none;
+  color: $link;
+
+  &:hover {
+    color: $black;
+  }
+}

@@ -5,6 +5,7 @@
   "author": "Spencer Dixon <spencercdixon@gmail.com>",
   "dependencies": {
     "aphrodite": "^1.1.0",
+    "fecha": "^2.3.0",
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
     "highlight.js": "^9.6.0",
@@ -22,6 +23,7 @@
     "react-disqus-thread": "^0.4.0",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
+    "react-read-time": "^0.1.5",
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.12.0",
     "reflexbox": "^2.2.2",

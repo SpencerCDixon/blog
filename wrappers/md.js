@@ -4,7 +4,10 @@ import { config } from 'config'
 import Tags from 'components/Tags';
 import ReactDisqusThread from 'react-disqus-thread';
 import Button from 'components/Button';
+import Date from 'components/Date';
+import ReadTime from 'react-read-time';
 import { Flex, Box } from 'reflexbox';
+import { colors, fonts } from 'css';
 
 export default class MDWrapper extends Component {
   state = {
@@ -25,7 +28,20 @@ export default class MDWrapper extends Component {
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
         />
-        <h1>{post.title}</h1>
+        <h1 style={{marginBottom: 0 }}>{post.title}</h1>
+
+        <Flex mt={1} mb={3}>
+          <Box mr={1}>
+            <Date time={post.date} /> ·
+          </Box>
+          <Box>
+            <ReadTime content={post.body} style={{
+              color: colors.lightGray, 
+              fontSize: fonts.small
+            }} />
+          </Box>
+        </Flex>
+
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
         <Tags tags={tags} />
 
