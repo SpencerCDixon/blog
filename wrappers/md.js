@@ -28,7 +28,13 @@ export default class MDWrapper extends Component {
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
         />
-        <h1 style={{marginBottom: 0 }}>{post.title}</h1>
+        <h1 style={{
+          marginBottom: 0,
+          fontFamily: fonts.tertiary,
+          fontWeight: fonts.xThin,
+        }}>
+          {post.title}
+        </h1>
 
         <Flex mt={1} mb={3}>
           <Box mr={1}>
