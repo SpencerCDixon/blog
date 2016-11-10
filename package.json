@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "spencer-dixon-blog",
+  "description": "Personal Blog",
+  "version": "0.1.0",
+  "author": "Spencer Dixon <spencercdixon@gmail.com>",
   "dependencies": {
     "aphrodite": "^1.1.0",
     "front-matter": "^2.0.7",
@@ -32,16 +32,17 @@
     "underscore.string": "^3.3.4"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "rimraf": "^2.5.4"
   },
   "keywords": [
-    "gatsby"
+    "blog",
+    "spencer"
   ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && netlify deploy public",
-    "start": "gatsby develop"
+    "deploy": "npm run clean && npm run build && npm run netlify && open http://blog-staging.netlify.com/",
+    "netlify": "netlify deploy public",
+    "start": "gatsby develop",
+    "clean": "rimraf public"
   }
 }
