@@ -4,8 +4,6 @@
   "version": "0.1.0",
   "author": "Spencer Dixon <spencercdixon@gmail.com>",
   "dependencies": {
-    "aphrodite": "^1.1.0",
-    "fecha": "^2.3.0",
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
     "highlight.js": "^9.6.0",
@@ -14,6 +12,7 @@
     "markdown-it": "^7.0.1",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.3.0",
+    "moment": "^2.16.0",
     "object-assign": "^4.1.0",
     "react-disqus-thread": "^0.4.0",
     "react-headroom": "^2.1.2",

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import fecha from 'fecha';
+import moment from 'moment';
 import { colors, fonts } from 'css';
 
 const sx = {
@@ -8,22 +8,9 @@ const sx = {
 };
 
 function Date({ time }) {
-  let formatted;
-  // TODO: fix this, these conditionals are ridiculous
-  if (time) {
-    const parsed = fecha.parse(time, 'YYYY-DD-MM');
-    if (parsed) {
-      formatted = fecha.format(parsed, 'mediumDate');
-    } else {
-      formatted = 'Unknown Date'
-    }
-  } else {
-    formatted = 'Unknown Date'
-  }
-
   return (
     <span style={sx}>
-      {formatted}
+      {moment(time).format('MMM Do, YYYY')}
     </span>
   );
 }
