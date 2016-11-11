@@ -5,14 +5,15 @@ date: 2015-10-01
 tags: ruby, tutorials, rails
 ---
 
+::: info
 **Note:** this assumes you already have carrierwave up and running.  For help
 with that see the documentation on the
 [carrierwave](https://github.com/carrierwaveuploader/carrierwave) repo.
+:::
 
 The other day I implemented image preview using Carrierwave and I couldn't seem
 to find any great tutorials/blog posts on how to do it.  Wanted to post how to
-do it in case someone else was interesting in doing image preview with
-carrierwave.
+do it in case someone else was interesting image preview as well.
 
 ```erb
 # ... rest of the form ...
