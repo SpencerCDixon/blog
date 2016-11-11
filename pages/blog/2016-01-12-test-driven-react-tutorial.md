@@ -49,8 +49,10 @@ Here are some more resources to learn more about webpack if interested:
 2.  [Webpack Beginner Blog Post](http://blog.madewithlove.be/post/webpack-your-bags/)  
 3.  [Pete Hunts Infamous Webpack How-to](https://github.com/petehunt/webpack-howto)  
 
-> **NOTE**: I recommend using node `v5.1.0` if you're going to follow along with
-> this tutorial.  Anything `>4` should be fine though.
+::: warning
+I recommend using node `v5.1.0` if you're going to follow along with
+ this tutorial.  Anything `>4` should be fine though.
+:::
 
 First, lets install all webpack and babel dependencies.  Babel is a JavaScript
 transpiler which allows us to write ES6 (es2015) and ES7 code and make sure it all gets
@@ -64,8 +66,8 @@ npm init        # follow along with normal npm init to set up project
 npm i babel-loader babel-core webpack --save-dev
 ```
 
-::: warning
-*`npm i` is an alias for npm install.*
+::: tip
+  *`npm i` is an alias for npm install.*
 :::
 
 Next lets set up our project directory and create a `webpack.config.js` file:
@@ -149,11 +151,13 @@ Paste in the presets:
 }
 ```
 
-> NOTE: due to the nature of how quickly npm packages get upgraded in the
-> React/JS community.  If at any point in the tutorial you're getting errors try
-> installing exact package versions using the package-name@version-number-here
-> syntax.  The completed package.json can be found at the end of the tutorial for
-> reference
+::: info
+Due to the nature of how quickly npm packages get upgraded in the
+React/JS community.  If at any point in the tutorial you're getting errors try
+installing exact package versions using the `package-name@version-number-here`
+syntax.  The completed package.json can be found at the end of the tutorial for
+reference
+:::
 
 To confirm it works lets put some react code in `main.js` and see if it bundles
 everything properly.  Install React and React DOM:  
@@ -162,7 +166,9 @@ everything properly.  Install React and React DOM:
 npm i react react-dom -S
 ```
 
-> Using the `-S` flag is an alias for `--save`.  
+::: tip
+Using the `-S` flag is an alias for `--save`.  
+:::
 
 Create the first React component:  
 
@@ -398,8 +404,10 @@ Now that our more 'universal' testing tools are set up (mocha, chai, sinon)
 let's install Enzyme and start testing some React components!
 
 Install packages:
-> **Note** it's important to install version 1.2.0 of enzyme since in 2.0 
-> there are some breaking changes that affect the tutorial
+::: warning
+It's important to install version 1.2.0 of enzyme since in 2.0 
+there are some breaking changes that affect the tutorial
+:::
 
 ```
 npm i enzyme@1.2.0 react-addons-test-utils --save-dev
@@ -458,8 +466,10 @@ If we run the tests with `npm test` they should fail.  It makes sense since we
 havn't actually created a Root component in the proper location.  So lets do
 that:  
 
-> If at any point you want to see the source for this code it is all available 
-> [on github here](https://github.com/SpencerCDixon/react-testing-starter-kit)
+::: info
+If at any point you want to see the source for this code it is all available 
+ [on github here](https://github.com/SpencerCDixon/react-testing-starter-kit)
+:::
 
 ```javascript
 # /src/containers/Root.js

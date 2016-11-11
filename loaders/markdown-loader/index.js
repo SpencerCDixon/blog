@@ -25,13 +25,31 @@ var md = markdownIt({
   typographer: true,
   highlight,
 })
-  .use(require('markdown-it-sub'))
-  .use(require('markdown-it-footnote'))
-  .use(require('markdown-it-deflist'))
-  .use(require('markdown-it-abbr'))
-  .use(require('markdown-it-attrs'))
   .use(require('markdown-it-emoji'))
-  .use(require('markdown-it-container', 'warning'))
+  .use(require('markdown-it-container'), 'tip', {
+    validate: name => name.trim().length,
+    render: (tokens, idx) => {
+      const kind = tokens[idx].info.trim();
+
+      let icon;
+      if (kind === 'tip') {
+        icon = 'add_alert'
+      } else if (kind === 'warning') {
+        icon = 'warning'
+      } else if (kind === 'info') {
+        icon = 'info'
+      }
+
+      if (tokens[idx].nesting === 1) {
+        return `
+          <div class="${kind}">\n
+            <i class="material-icons">${icon}</i>\n
+        `;
+      } else  {
+        return '</div>\n';
+      }
+    }
+  });
 
 module.exports = function (content) {
   this.cacheable()
