@@ -8,9 +8,17 @@ const sx = {
 };
 
 function Date({ time }) {
+  let formatted;
+  const parsed = fecha.parse(time, 'YYYY-DD-MM');
+  if (parsed) {
+    formatted = fecha.format(parsed, 'mediumDate');
+  } else {
+    formatted = 'Unknown Date'
+  }
+
   return (
     <span style={sx}>
-      {fecha.format(fecha.parse(time, 'YYYY-DD-MM'), 'mediumDate')}
+      {formatted}
     </span>
   );
 }

@@ -1,15 +1,13 @@
 ---
 layout: post
 title: "Sustainable Software: The Small Things Matter"
-date: 2015-08-18 20:45 UTC
+date: 2015-08-18 
 tags: sustainability, software, design
 featured: true
 ---
 
 Sustainable software is the difference between happy productive developers and
 disheartened developers with less hair and a LinkedIn thread with a recruiter.
-
-READMORE
 
 The idea of sustainability has been an omnipresent theme throughout my life.  It
 really started to take root in high school when I started my first
@@ -83,7 +81,7 @@ throughout the system.
 > Neglect is like an infection. Left 
 > unchecked it will spread throughout our 
 > entire system of disciplines and eventually lead to a complete breakdown...
->  - Jim Rohn
+> (Jim Rohn)
 
 How you do anything is how you do everything.  When you start to care about the
 extra white space in a file or the missing tabs, your software organically starts

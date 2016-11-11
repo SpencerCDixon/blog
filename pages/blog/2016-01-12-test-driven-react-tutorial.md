@@ -2,7 +2,7 @@
 layout: post
 title: Test Driven React Tutorial
 path: "/test-driven-react-tutorial/"
-date: 2016-01-12 21:55 UTC
+date: 2016-01-12 
 tags: tutorial, testing, react, javascript
 featured: true
 ---

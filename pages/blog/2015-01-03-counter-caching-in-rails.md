@@ -11,8 +11,6 @@ Earlier this week I was given a pretty straightforward user story of figuring ou
 
 Wrote my acceptance tests and then was surprised at how complicated this was to actually implement.  After devouring the Active Record documentation in hopes of finding a method that would leverage the two models associations I ended up bootstrapping a method to get it to work:
 
-READMORE
-
 ```ruby
 # in Question Model:
 def self.unanswered

@@ -7,8 +7,6 @@ tags: rails, ruby, API, flowdock
 
 Integrating the Flowdock Push API is a lot easier than I thought it would be.  I decided to document how to get it set up.
 
-READMORE
-
 ### Step 1 - Add Gems
 
 Add these gems to your Gemfile:   

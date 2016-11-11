@@ -38,7 +38,7 @@ export default class MDWrapper extends Component {
 
         <Flex mt={1} mb={3}>
           <Box mr={1}>
-            <Date time={post.date} /> ·
+            <Date time={post.date} />
           </Box>
           <Box>
             <ReadTime content={post.body} style={{

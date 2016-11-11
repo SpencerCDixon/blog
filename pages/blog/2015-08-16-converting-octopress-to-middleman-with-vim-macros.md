@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Converting Octopress To Middleman With Vim Macros
-date: 2015-08-16 20:41 UTC
+date: 2015-08-16 
 tags: vim, middleman
 ---
 
@@ -10,8 +10,6 @@ made.  I finally found a blogging platform that integrates seamlessly into my
 everyday workflow as a Rails developer.  One thing I wasn't looking forward to
 though was converting all my old Octopress posts into the proper Middleman format.
 Thank god for Vim macros.
-
-READMORE
 
 A Vim macro defined by [their wiki](http://vim.wikia.com/wiki/Macros):
 

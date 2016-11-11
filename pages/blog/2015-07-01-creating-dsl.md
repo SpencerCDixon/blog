@@ -9,8 +9,6 @@ Recently I built a small DSL for work that allows users to sync data to MongoDB
 from any external API.  It was my first time making a DSL so I decided to
 document a few things that helped me get started:
 
-READMORE
-
 #### Using Ruby's `included` hook to extend class methods
 
 ```ruby
