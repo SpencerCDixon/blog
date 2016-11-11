@@ -9,9 +9,14 @@ const sx = {
 
 function Date({ time }) {
   let formatted;
-  const parsed = fecha.parse(time, 'YYYY-DD-MM');
-  if (parsed) {
-    formatted = fecha.format(parsed, 'mediumDate');
+  // TODO: fix this, these conditionals are ridiculous
+  if (time) {
+    const parsed = fecha.parse(time, 'YYYY-DD-MM');
+    if (parsed) {
+      formatted = fecha.format(parsed, 'mediumDate');
+    } else {
+      formatted = 'Unknown Date'
+    }
   } else {
     formatted = 'Unknown Date'
   }
