@@ -8,6 +8,7 @@ import Date from 'components/Date';
 import ReadTime from 'react-read-time';
 import { Flex, Box } from 'reflexbox';
 import { colors, fonts } from 'css';
+import MailchimpForm from 'components/MailchimpForm';
 
 export default class MDWrapper extends Component {
   state = {
@@ -51,7 +52,11 @@ export default class MDWrapper extends Component {
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
         <Tags tags={tags} />
 
-        <Flex mt={2} justify="center">
+        <Flex mt={3}>
+          <MailchimpForm />
+        </Flex>
+
+        <Flex mt={3} justify="center">
           <Button onClick={this.handleToggleComments}>
             {buttonText}
           </Button>

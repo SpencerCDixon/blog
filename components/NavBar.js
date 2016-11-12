@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Headroom from 'react-headroom'
 import NavLink from '../components/NavLink';
 import Logo from '../components/Logo';

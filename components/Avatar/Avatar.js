@@ -3,14 +3,15 @@ import css from './Avatar.module.scss';
 import { Flex, Box } from 'reflexbox';
 
 
-function Avatar({ src, alt, subtitle }) {
+function Avatar({ src, alt, subtitle, imageStyle, ...rest }) {
   return (
-    <Flex flexColumn>
+    <Flex flexColumn {...rest}>
       <Box>
         <img
           src={src}
           alt={alt}
           className={css.avatar}
+          style={imageStyle}
         />
       </Box>
       <Box className={css.subtitle}>

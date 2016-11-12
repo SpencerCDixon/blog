@@ -1,0 +1,30 @@
+@import "css/_variables";
+
+.container {
+  padding: 20px;
+  border: 2px solid $black;
+}
+
+.form {
+  margin-bottom: 0;
+}
+
+.input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.button {
+  background: $actionColor;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: $shadow-1;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  &:hover {
+    box-shadow: $shadow-2;
+  }
+}
