@@ -14,10 +14,12 @@
     "markdown-it-emoji": "^1.3.0",
     "moment": "^2.16.0",
     "object-assign": "^4.1.0",
+    "react-addons-css-transition-group": "^15.3.2",
     "react-disqus-thread": "^0.4.0",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
     "react-read-time": "^0.1.5",
+    "react-responsive": "^1.2.1",
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.12.0",
     "reflexbox": "^2.2.2",
@@ -45,6 +47,6 @@
     "netlify": "netlify deploy public",
     "start": "gatsby develop",
     "clean": "rimraf public",
-    "post": "babel-node ./bin/new_post.js"
+    "post": "babel-node ./bin/new_post.js --presets es2015"
   }
 }

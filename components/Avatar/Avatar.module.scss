@@ -1,0 +1,14 @@
+@import "css/_variables";
+
+.avatar {
+  margin-bottom: 0;
+  border-radius: 50%;
+  max-width: 200px;
+  box-shadow: $shadow-2;
+}
+
+.subtitle {
+  font-size: $small;
+  color: $lightGray;
+  text-align: center;
+}

@@ -46,7 +46,7 @@ willpower.
 
 ## So what does all this have to do with software?
 Six months teaching software development to beginners at [Launch
-Academy](https://www.launchacademy.com/) and one thing I noticed is how
+Academy](https://www.launchacademy.com/), one thing I noticed is how
 difficult it is for beginners to make sustainable choices.  It makes perfect
 sense.  Their growth feeds off that instant gratification of results.  When I
 was in their shoes I was just as guilty.  I had that hacker mentality of 
