@@ -9,7 +9,7 @@ import path from 'path';
 prompt.start()
 
 prompt.get(['title'], (err, result) => {
-  const postName = `${moment().format('YYYY-MM-DD')}--${str.slugify(result.title)}`;
+  const postName = `${moment().format('YYYY-MM-DD')}-${str.slugify(result.title)}`;
   const dir = path.resolve(__dirname, '..', 'pages', 'blog', postName)
   mkdirp.sync(dir);
 
@@ -19,6 +19,7 @@ prompt.get(['title'], (err, result) => {
     date: moment().toJSON(),
     layout: 'post',
     draft: true,
+    path: `/blog/${str.slugify(result.title)}/`,
   };
   postString += yaml.safeDump(frontMatter);
   postString += "---\n";

@@ -59,7 +59,7 @@ export default class MDWrapper extends Component {
         </Flex>
 
         <Flex mt={3} justify="center">
-          <ShareIcons title={title} desc={desc} url={location.href} />
+          <ShareIcons title={title} desc={desc} url={`http://spencerdixon.com${post.path}`} />
         </Flex>
 
         <Flex mt={3} justify="center">
