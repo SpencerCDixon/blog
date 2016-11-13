@@ -31,7 +31,7 @@ class ShareIcons extends Component {
     return (
       <Flex flexColumn justify="center" align="center">
         <Box mr={2}>
-          <h4>Found this useful? Pay it forward and share with frandz ❤️</h4>
+          <h4>Found this useful? Help others save time and share this post ❤️</h4>
         </Box>
         <Flex justify="space-around">
           <Box mx={2}>
