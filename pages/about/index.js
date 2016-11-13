@@ -46,11 +46,11 @@ class AboutIndex extends Component {
           </p>
 
           <p>
-            In the past I was a bootcamp instructor at <a href="https://www.launchacademy.com/" target="_blank">Launch Academy</a> where I taught eager students how to code with Ruby and Rails.  After Launch, I joined a startup called Smart Scheduling (later known as Arsenel Health) which built predictive models to figure out when patients weren't going to show to their doctors appointments.  Smart Scheduling was <a href="http://newsroom.athenahealth.com/phoenix.zhtml?c=253091&p=irol-newsArticle&ID=2157141" target="_blank">acquired by athenahealth</a> in April, 2016.  While at athena I rebuilt their streamlined UI Kit into React and used that UI Kit to integrate Smart Scheduling into their flagship product (athenaNet).  Currently, I'm a frontend engineer at another startup called <a href="http://www.bluearchive.com/" target="_blank">BlueArchive</a>.
+            In the past I was a bootcamp instructor at <a href="https://www.launchacademy.com/" target="_blank">Launch Academy</a> where I taught eager students how to code with Ruby and Rails.  After Launch, I joined a startup called Smart Scheduling (later known as Arsenel Health) which built predictive models to figure out when patients weren't going to show up to their doctors appointments.  Smart Scheduling was <a href="http://newsroom.athenahealth.com/phoenix.zhtml?c=253091&p=irol-newsArticle&ID=2157141" target="_blank">acquired by athenahealth</a> in April, 2016.  While at athena I rebuilt their streamlined UI Kit into React and used that UI Kit to integrate Smart Scheduling into their flagship product (athenaNet).  Currently, I'm a frontend engineer at another startup called <a href="http://www.bluearchive.com/" target="_blank">BlueArchive</a>.
           </p>
 
           <p>
-            If you're into personality tests I'm an <a href="https://www.16personalities.com/intj-personality" target="_blank">INTJ</a> (<i>which explains so much</i>).  Personally I'm more interested in <a href="http://www.taylorprotocols.com/" target="_blank">CVI</a> than Myers Briggs so if you're familiar with CVI I'm an <code>Innovator/Builder</code>.
+            If you're into personality tests I'm an <a href="https://www.16personalities.com/intj-personality" target="_blank">INTJ</a> (<i>which explains so much</i>).  I favor <a href="http://www.taylorprotocols.com/" target="_blank">CVI</a> to Myers Briggs so if you're familiar with CVI I'm an <code>Innovator/Builder</code>.
           </p>
 
           <p>

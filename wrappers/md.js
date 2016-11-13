@@ -9,6 +9,7 @@ import ReadTime from 'react-read-time';
 import { Flex, Box } from 'reflexbox';
 import { colors, fonts } from 'css';
 import MailchimpForm from 'components/MailchimpForm';
+import ShareIcons from 'components/ShareIcons';
 
 export default class MDWrapper extends Component {
   state = {
@@ -21,7 +22,8 @@ export default class MDWrapper extends Component {
 
   render () {
     const post = this.props.route.page.data
-    const tags = post.tags ? post.tags.split(',') : [];
+    const { title, desc, tags } = post;
+    const finalTags = tags ? tags.split(',') : [];
     const buttonText = this.state.isShowingComments ? 'Hide Comments' : 'Show Comments';
 
     return (
@@ -50,10 +52,14 @@ export default class MDWrapper extends Component {
         </Flex>
 
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        <Tags tags={tags} />
+        <Tags tags={finalTags} />
 
         <Flex mt={3}>
           <MailchimpForm />
+        </Flex>
+
+        <Flex mt={3} justify="center">
+          <ShareIcons title={title} desc={desc} url={location.href} />
         </Flex>
 
         <Flex mt={3} justify="center">

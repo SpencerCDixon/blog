@@ -24,6 +24,7 @@
     "react-read-time": "^0.1.5",
     "react-responsive": "^1.2.1",
     "react-responsive-grid": "^0.3.3",
+    "react-share": "^1.10.2",
     "react-typography": "^0.12.0",
     "reflexbox": "^2.2.2",
     "safe-access": "^0.1.0",

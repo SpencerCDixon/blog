@@ -26,7 +26,6 @@ class MailchimpForm extends Component {
             src={Spencer} 
             alt="Spencer" 
             imageStyle={{maxWidth: 120}}
-            subtitle={<Link to="/about/">About Spencer</Link>}
           />
         </Box>
         <Flex id="mc_embed_signup" flexColumn align="center" order={1}>
