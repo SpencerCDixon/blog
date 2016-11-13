@@ -3836,6 +3836,16 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
+markdown-it-anchor:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-2.5.0.tgz#0df3db0e51d82eb3901efbf7c324a004189c2261"
+  dependencies:
+    string "^3.0.1"
+
+markdown-it-attrs:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-attrs/-/markdown-it-attrs-0.8.0.tgz#11ad35725f01d7e249e897d7ce8b21403dc28f16"
+
 markdown-it-container@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-container/-/markdown-it-container-2.0.0.tgz#0019b43fd02eefece2f1960a2895fba81a404695"
@@ -3843,6 +3853,10 @@ markdown-it-container@^2.0.0:
 markdown-it-emoji@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-1.3.0.tgz#903ae1a9968c3f17d4e142f115d4ec575e56d2cb"
+
+markdown-it-link-attributes:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-1.0.0.tgz#8da1ca1729f0fa16c65615b0b1075b79c8371a2e"
 
 markdown-it@^7.0.1:
   version "7.0.1"
@@ -5872,6 +5886,10 @@ string-width@^1.0.1:
     code-point-at "^1.0.0"
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
+
+string@^3.0.1:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/string/-/string-3.3.3.tgz#5ea211cd92d228e184294990a6cc97b366a77cb0"
 
 stringstream@~0.0.4:
   version "0.0.5"

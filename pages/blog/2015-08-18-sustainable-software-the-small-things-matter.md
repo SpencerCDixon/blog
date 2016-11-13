@@ -113,4 +113,3 @@ about the small things and commit to approaching software development with a sus
 Software developers are artists of the 21st century.  Painters take care of
 their brushes, musicians take care of their instruments, it only makes sense
 that we should take just as good care of our code bases.  
-

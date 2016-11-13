@@ -26,6 +26,16 @@ var md = markdownIt({
   highlight,
 })
   .use(require('markdown-it-emoji'))
+  .use(require('markdown-it-attrs'))
+  .use(require('markdown-it-anchor'), {
+    level: 1,
+    permalink: true,
+    permalinkClass: 'header-link',
+    permalinkSymbol: '🔗',
+  })
+  .use(require('markdown-it-link-attributes'), {
+    target: '_blank',
+  })
   .use(require('markdown-it-container'), 'tip', {
     validate: name => name.trim().length,
     render: (tokens, idx) => {
