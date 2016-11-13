@@ -29,17 +29,6 @@ programmer.
   *  Basic understanding of Modules  
   *  Basic understanding of inheritance  
 
-## Table Of Contents
-  * [Installation](#install)  
-  * [Getting Started](#start)  
-  * [Draw & Update](#draw_update)  
-  * [Images](#images)  
-  * [Text](#text)  
-  * [State & Bounding Boxes](#state_bounding)  
-  * [Using Mouse & Keys](#keys)  
-  * [Combining Keys & Bounding Boxes](#keys_bounding)  
-
-
 ### Installation 
 
 The first step is to install the Gosu Gem:  
@@ -147,7 +136,7 @@ my_game.show
 Run your main.rb file so you can see the game screen be displayed to the
 computer screen. Success!  
 
-###<a name="draw_update"></a> Draw & Update 
+### Draw & Update 
 
 Now that we can get a Gosu game set up and a screen drawn we need to go over two
 of the most important concepts of Gosu: #draw and #update.  #Draw and #update are
@@ -206,7 +195,7 @@ running.  You should see that puts statement over and over.
 In order to actually draw something to the screen we are going to need to create an image
 object that has the ability of being drawn.  
 
-###<a name="images"></a> Images 
+### Images 
 
 Gosu has a special Image class that can be instantiated with:
 ```ruby
@@ -257,7 +246,7 @@ players side and then computer side.  We will finish this section off with
 putting the actual rock, paper, and scissors on the screen then move on to
 explaining how a player would select one.
 
-###<a name="text"></a> Drawing Text Onto Screen
+### Drawing Text Onto Screen
 
 In order to draw text on the screen we first need to instantiate a font just
 like we did with the background image.  Gosu has a built in font module in order
@@ -365,7 +354,7 @@ class Rock
 end
 ```
 
-###<a name="state_bounding"></a> State And Bounding Boxes
+### State And Bounding Boxes
 
 #### State
 In game development state is an extremely useful tool for setting up events.
@@ -511,7 +500,7 @@ class Scissors
 end
 ```
 
-###<a name="keys"></a> Keys & Mouse Interaction
+### Keys & Mouse Interaction
 
 In order to use keys in your Gosu game there are two major concepts to understand: button down and button up.
 Gosu will call the methods `#button_down` and `#button_up` 60 frames per second.
@@ -565,7 +554,7 @@ end
 
 To use the mouse Gosu has: `Gosu::MsLeft` and `Gosu::MsRight`.
 
-###<a name="keys_bounding"></a> Combining Keys & Bounding Boxes
+### Combining Keys & Bounding Boxes
 
 The last concept in order to complete our game will involve combining
 button_down with our bounding boxes on the different images.  Every time a user
@@ -685,6 +674,3 @@ be a good time to start looking at the bigger picture and make some design
 decisions.  For example, I probably don't need separate classes for Rock, Paper,
 and Scissors.  I could potentially just have 1 class and pass in the proper img
 url and name of the element.
-
-
-
