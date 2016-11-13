@@ -54,7 +54,7 @@ export default class MDWrapper extends Component {
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
         <Tags tags={finalTags} />
 
-        <Flex mt={3}>
+        <Flex mt={3} justify="center">
           <MailchimpForm />
         </Flex>
 

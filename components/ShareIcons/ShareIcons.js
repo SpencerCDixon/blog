@@ -1,13 +1,19 @@
 import React, { Component, PropTypes } from 'react';
-import { ShareButtons, generateShareIcon } from 'react-share';
+import { ShareCounts, ShareButtons, generateShareIcon } from 'react-share';
 import { Flex, Box } from 'reflexbox';
 import css from './ShareIcons.module.scss';
+import { fonts, colors } from 'css';
 
 const {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
 } = ShareButtons;
+
+const {
+  FacebookShareCount,
+  LinkedinShareCount,
+} = ShareCounts;
 
 const propTypes = {
   url: PropTypes.string,
@@ -32,12 +38,20 @@ class ShareIcons extends Component {
             <FacebookShareButton url={url} title={title} className={css.icon}>
               <FacebookIcon size={32} />
             </FacebookShareButton>
+
+            <FacebookShareCount url={url} className={css.count}>
+              {count => count >= 3 ? count : null}
+            </FacebookShareCount>
           </Box>
 
           <Box mx={2}>
             <LinkedinShareButton url={url} title={title} className={css.icon}>
               <LinkedinIcon size={32} />
             </LinkedinShareButton>
+
+            <LinkedinShareCount url={url} className={css.count}>
+              {count => count >= 3 ? count : null}
+            </LinkedinShareCount>
           </Box>
 
           <Box mx={2}>

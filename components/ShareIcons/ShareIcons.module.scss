@@ -1,3 +1,17 @@
+@import "css/_variables";
+
 .icon {
   cursor: pointer;
+  transition: all .2s ease-in;
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: $shadow-1;
+  }
+}
+
+.count {
+  font-size: $small;
+  color: $lightGray;
+  text-align: center;
 }
