@@ -5278,9 +5278,9 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-read-time@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/react-read-time/-/react-read-time-0.1.5.tgz#d14bbe4990f2bec2a36cf1212205cb7cee27aec2"
+react-read-time@0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/react-read-time/-/react-read-time-0.1.6.tgz#00b4afea55cd5d2ee16a83bdd7d661ce29cd5d7e"
 
 react-responsive:
   version "1.2.1"

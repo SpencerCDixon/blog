@@ -36,7 +36,7 @@ class MailchimpForm extends Component {
             target="_blank" 
             noValidate
           >
-            <Flex id="mc_embed_signup_scroll" style={{width: '100%'}}>
+            <Flex id="mc_embed_signup_scroll" style={{width: '100%'}} wrap justify="center">
               <Box my={1} className="mc-field-group">
                 <input 
                   type="email" 
