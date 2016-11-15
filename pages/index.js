@@ -9,7 +9,6 @@ import Helmet from "react-helmet"
 import { config } from 'config'
 import { Flex, Box } from 'reflexbox';
 import { fonts } from 'css';
-import css from './index.module.scss';
 
 export default class Index extends React.Component {
   render () {
