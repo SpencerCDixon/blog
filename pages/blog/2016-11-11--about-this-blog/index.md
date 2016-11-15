@@ -2,6 +2,7 @@
 title: About This Blog
 date: '2016-11-11T22:46:52.358Z'
 layout: post
+path: "/blog/about-this-blog/"
 draft: true
 ---
 
