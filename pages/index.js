@@ -1,6 +1,7 @@
 import React from 'react'
 import Avatar from 'components/Avatar';
 import Spencer from './about/coder-spencer.jpg';
+import MailchimpForm from 'components/MailchimpForm';
 import HeaderLink from 'components/HeaderLink';
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
@@ -29,7 +30,12 @@ export default class Index extends React.Component {
           <Box mt={3}>
             <Avatar src={Spencer} alt="Spencer Dixon" />
           </Box>
+          <Box my={2} flex flexColumn align="center">
+            <p>Join the monthly newsletter and never miss a post.</p>
+            <MailchimpForm inline />
+          </Box>
         </Flex>
+
         <Flex mt={2} flexColumn>
           <h2 style={{
             fontFamily: fonts.primary,

@@ -1,0 +1,16 @@
+@import "css/_variables";
+
+.button {
+  background: $actionColor;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: $shadow-1;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  &:hover {
+    box-shadow: $shadow-2;
+  }
+}
