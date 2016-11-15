@@ -8,6 +8,10 @@ import access from 'safe-access';
 import { prune, include as includes } from 'underscore.string';
 import { Container } from 'react-responsive-grid';
 import HeaderLink from 'components/HeaderLink';
+import Date from 'components/Date';
+import ReadTime from 'react-read-time';
+import { Flex, Box } from 'reflexbox';
+import { colors, fonts } from 'css';
 
 function sortByDate(posts) {
   return sortBy(posts, post => access(post, 'data.date')).reverse();
@@ -34,7 +38,18 @@ const BlogIndex = (props) => {
             marginBottom: rhythm(1/4),
           }}
         >
-          <HeaderLink to={page.path}>{title}</HeaderLink>
+          <HeaderLink to={page.path} style={{marginBottom: 0}}>{title}</HeaderLink>
+          <Flex mt={1} mb={3}>
+            <Box mr={1}>
+              <Date time={page.data.date} />
+            </Box>
+            <Box>
+              <ReadTime content={page.data.body} style={{
+                color: colors.lightGray, 
+                fontSize: fonts.small
+              }} />
+            </Box>
+          </Flex>
         </li>
       );
     }
@@ -51,7 +66,18 @@ const BlogIndex = (props) => {
             marginBottom: rhythm(1/4),
           }}
         >
-          <HeaderLink to={page.path}>{title}</HeaderLink>
+          <HeaderLink to={page.path} style={{marginBottom: 0}}>{title}</HeaderLink>
+          <Flex mt={1} mb={3}>
+            <Box mr={1}>
+              <Date time={page.data.date} />
+            </Box>
+            <Box>
+              <ReadTime content={page.data.body} style={{
+                color: colors.lightGray, 
+                fontSize: fonts.small
+              }} />
+            </Box>
+          </Flex>
         </li>
       );
     }
@@ -59,20 +85,22 @@ const BlogIndex = (props) => {
 
   return (
     <div>
-      <h1>Featured</h1>
+      <h1 style={{textAlign: 'center'}}>Featured</h1>
       <ul
         style={{
           listStyleType: 'none',
           marginTop: rhythm(1),
+          marginLeft: 0,
         }}
       >
         {featuredLinks}
       </ul>
-      <h1>Latest</h1>
+      <h1 style={{textAlign: 'center'}}>Latest</h1>
       <ul
         style={{
           listStyleType: 'none',
           marginTop: rhythm(1),
+          marginLeft: 0,
         }}
       >
         {pageLinks}

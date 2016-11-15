@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import css from './Avatar.module.scss';
 import { Flex, Box } from 'reflexbox';
 
-
 function Avatar({ src, alt, subtitle, imageStyle, ...rest }) {
   return (
     <Flex flexColumn {...rest}>

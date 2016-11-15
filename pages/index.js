@@ -9,6 +9,7 @@ import Helmet from "react-helmet"
 import { config } from 'config'
 import { Flex, Box } from 'reflexbox';
 import { fonts } from 'css';
+import css from './index.module.scss';
 
 export default class Index extends React.Component {
   render () {
@@ -28,8 +29,12 @@ export default class Index extends React.Component {
           </p>
 
           <Box mt={3}>
-            <Avatar src={Spencer} alt="Spencer Dixon" />
+            <Avatar 
+              src={Spencer} 
+              alt="Spencer Dixon" 
+            />
           </Box>
+
           <Box my={2} flex flexColumn align="center">
             <p>Join the monthly newsletter and never miss a post.</p>
             <MailchimpForm inline />
