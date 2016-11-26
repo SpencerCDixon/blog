@@ -31,8 +31,11 @@ export default class MDWrapper extends Component {
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
           meta={[
-            { name: "description", content: title },
+            { name: "description", content: description || title },
             { name: "twitter:card", value: "summary" },
+            { name: "twitter:creator", content: "@SpencerCDixon" },
+            { name: "twitter:title", content: title },
+            { name: "twitter:description", content: description || title },
             { property: "og:title", content: title },
             { property: "og:type", content: "article" },
             { property: "og:url", content: `http://spencerdixon.com${post.path}` },
