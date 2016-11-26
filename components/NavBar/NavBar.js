@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import Headroom from 'react-headroom'
-import NavLink from '../components/NavLink';
-import Logo from '../components/Logo';
+import NavLink from '../NavLink';
+import Logo from '../Logo';
 import MediaQuery from 'react-responsive';
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../../utils/typography'
 import { Flex, Box } from 'reflexbox';
+import './NavBar.scss';
 
 class NavBar extends Component {
   render() {
@@ -14,16 +15,16 @@ class NavBar extends Component {
           marginBottom: rhythm(1),
         }}
       >
-        <Flex py={2} px={4} wrap justify="center">
+        <div className="topNav">
           <Box> <Logo /> </Box>
-          <Box flexAuto />
+          <Box className="topNav-separator" flexAuto />
           <Flex>
             <Box px={1}> <NavLink to="/blog/">Blog</NavLink> </Box>
             <Box px={1}> <NavLink to="/about/"> About </NavLink> </Box>
             <Box px={1}> <NavLink to="/now/">Now</NavLink> </Box>
             <Box px={1}> <NavLink to="/book/">Book</NavLink> </Box>
           </Flex>
-        </Flex>
+        </div>
       </Headroom>
     );
   }

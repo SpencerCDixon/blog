@@ -42,7 +42,7 @@ class AboutIndex extends Component {
           </p>
 
           <p>
-            I've been building websites since I was 14 years old and started my first company <a href="http://www.greatlakesaquaponics.com/">Great Lakes Aquaponics</a> when I was 15.  As a full stack developer I'm interested in just about every stage of the product life cycle.
+            I've been building websites since I was 14 and started my first company <a href="http://www.greatlakesaquaponics.com/">Great Lakes Aquaponics</a> when I was 15.  As a full stack developer I'm interested in just about every stage of the product life cycle.
           </p>
 
           <p>

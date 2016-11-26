@@ -1,0 +1,12 @@
+.topNav {
+  padding: 16px 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .topNav-separator {
+    display: none;
+  }
+}
