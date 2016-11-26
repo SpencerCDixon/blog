@@ -22,7 +22,7 @@ const BlogIndex = (props) => {
   const pageLinks = [];
   let body;
   let title;
-  const blogPosts = filter(props.route.pages, page => includes(page.data.layout, 'post'));
+  const blogPosts = filter(props.route.pages, page => includes(page.data.layout, 'post') && !page.data.draft);
   const featuredPages = sortByDate(filter(blogPosts, page => access(page, 'data.featured')));
   const normalPosts = filter(blogPosts, page => !access(page, 'data.featured'));
   const sortedPages = sortByDate(normalPosts);

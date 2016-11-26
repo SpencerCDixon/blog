@@ -35,7 +35,7 @@ class ShareIcons extends Component {
         </Box>
         <Flex justify="space-around">
           <Box mx={2}>
-            <FacebookShareButton url={url} title={title} className={css.icon}>
+            <FacebookShareButton url={url} title={title} description={desc} className={css.icon}>
               <FacebookIcon size={32} />
             </FacebookShareButton>
 
@@ -45,7 +45,7 @@ class ShareIcons extends Component {
           </Box>
 
           <Box mx={2}>
-            <LinkedinShareButton url={url} title={title} className={css.icon}>
+            <LinkedinShareButton url={url} title={title} description={desc} className={css.icon}>
               <LinkedinIcon size={32} />
             </LinkedinShareButton>
 

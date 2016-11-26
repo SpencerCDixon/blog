@@ -7,7 +7,6 @@ import fs from 'fs';
 import path from 'path';
 
 prompt.start()
-
 prompt.get(['title'], (err, result) => {
   const postName = `${moment().format('YYYY-MM-DD')}-${str.slugify(result.title)}`;
   const dir = path.resolve(__dirname, '..', 'pages', 'blog', postName)

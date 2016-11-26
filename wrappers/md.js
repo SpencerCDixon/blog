@@ -22,7 +22,7 @@ export default class MDWrapper extends Component {
 
   render () {
     const post = this.props.route.page.data
-    const { title, desc, tags } = post;
+    const { title, description, tags } = post;
     const finalTags = tags ? tags.split(',') : [];
     const buttonText = this.state.isShowingComments ? 'Hide Comments' : 'Show Comments';
 
@@ -30,7 +30,16 @@ export default class MDWrapper extends Component {
       <div className="markdown">
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
+          meta={[
+            { name: "description", content: title },
+            { name: "twitter:card", value: "summary" },
+            { property: "og:title", content: title },
+            { property: "og:type", content: "article" },
+            { property: "og:url", content: `http://spencerdixon.com${post.path}` },
+            { property: "og:description", content: description || title },
+          ]}
         />
+
         <h1 style={{
           marginBottom: 0,
           fontFamily: fonts.tertiary,
@@ -59,7 +68,7 @@ export default class MDWrapper extends Component {
         </Flex>
 
         <Flex mt={3} justify="center">
-          <ShareIcons title={title} desc={desc} url={`http://spencerdixon.com${post.path}`} />
+          <ShareIcons title={title} desc={description} url={`http://spencerdixon.com${post.path}`} />
         </Flex>
 
         <Flex mt={3} justify="center">

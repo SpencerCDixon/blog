@@ -4,6 +4,7 @@ title: Test Driven React Tutorial
 path: "/blog/test-driven-react-tutorial/"
 date: 2016-01-12 
 tags: tutorial, testing, react, javascript
+description: "A tutorial for setting up a test driven react environment"
 featured: true
 ---
 
