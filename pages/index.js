@@ -17,8 +17,8 @@ export default class Index extends React.Component {
         <Helmet
           title={config.siteTitle}
           meta={[
-            {"name": "description", "content": "Sample"},
-            {"name": "keywords", "content": "sample, something"},
+            {"name": "description", "content": "Master Your Machine - A blog about programming and life."},
+            {"name": "keywords", "content": "Programming, blog, lifestyle design, React, Redux"},
           ]}
         />
         <Flex flexColumn align="center">

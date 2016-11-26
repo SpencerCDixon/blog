@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import { prefixLink } from 'gatsby-helpers';
+import { Link } from 'react-router';
 import { Flex, Box } from 'reflexbox';
 
 class NowIndex extends Component {
@@ -23,10 +25,15 @@ class NowIndex extends Component {
 
           <ol>
             <li>
-              <strong>Life API</strong> - an app to help me track all sorts of data and metrics about my life.
+              <strong>Life API</strong> - an app to help me track all sorts of data and metrics about my life.  It's called Roots, 
+              as in the roots required to live a fulfilling life.  <a href="https://dashboard.spencerdixon.com/sign_up" target="_blank">If you want to create an account and check it out you can do that
+              here.</a>
             </li>
             <li>
-              <strong>React UI Kit eBook</strong> - an eBook to teach people how to build a UI Kit in React.
+              <strong>React UI Kit eBook</strong> - an eBook to teach people how to build a UI Kit in React.  Learn more about the book &nbsp;
+              <Link to={prefixLink('/book/')}>
+                and sign up for updates!
+              </Link>
             </li>
             <li>
               <strong>Blog Redesign</strong> - you're reading it now!  Hope you like the new look :-)

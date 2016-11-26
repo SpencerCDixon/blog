@@ -11,6 +11,7 @@ const propTypes = {
 };
 const defaultProps = {
   inline: false,
+  id: '666e212a4d',
 }
 
 class MailchimpForm extends Component {
@@ -23,11 +24,13 @@ class MailchimpForm extends Component {
   updateEmail = (e, email) => { this.setState({email}); }
 
   render() {
+    const { id } = this.props;
+
     if (this.props.inline) {
       return (
         <Flex>
           <form 
-            action="//spencerdixon.us11.list-manage.com/subscribe/post?u=019dc2164dbdc16d844cf6dc2&amp;id=666e212a4d" 
+            action={`//spencerdixon.us11.list-manage.com/subscribe/post?u=019dc2164dbdc16d844cf6dc2&amp;id=${id}`}
             method="post" 
             id="mc-embedded-subscribe-form" 
             name="mc-embedded-subscribe-form" 
@@ -55,7 +58,7 @@ class MailchimpForm extends Component {
               </div>
 
               <div style={{position: 'absolute', left: -5000}}>
-                <input type="text" name="b_019dc2164dbdc16d844cf6dc2_666e212a4d" tabIndex="-1" value="" />
+                <input type="text" name={`b_019dc2164dbdc16d844cf6dc2_${id}`} tabIndex="-1" value="" />
               </div>
 
               <Box flex align="center" ml={2}>
@@ -81,7 +84,7 @@ class MailchimpForm extends Component {
         <Flex id="mc_embed_signup" flexColumn align="center" order={1}>
           <h4>Want More? Get fresh articles, screencasts, and tutorials sent to your inbox.</h4>
           <form 
-            action="//spencerdixon.us11.list-manage.com/subscribe/post?u=019dc2164dbdc16d844cf6dc2&amp;id=666e212a4d" 
+            action={`//spencerdixon.us11.list-manage.com/subscribe/post?u=019dc2164dbdc16d844cf6dc2&amp;id=${id}`}
             method="post" 
             id="mc-embedded-subscribe-form" 
             name="mc-embedded-subscribe-form" 
@@ -121,7 +124,7 @@ class MailchimpForm extends Component {
               </div>
 
               <div style={{position: 'absolute', left: -5000}}>
-                <input type="text" name="b_019dc2164dbdc16d844cf6dc2_666e212a4d" tabIndex="-1" value="" />
+                <input type="text" name={`b_019dc2164dbdc16d844cf6dc2_${id}`} tabIndex="-1" value="" />
               </div>
 
               <Box flex justify="flex-end" my={1}>
