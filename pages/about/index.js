@@ -2,9 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import Avatar from 'components/Avatar';
 import { Link } from 'react-router';
 import { Flex, Box } from 'reflexbox';
-import CoderSpencer from './coder-spencer.jpg';
-import BusinessSpencer from './biz-spencer.png';
-import WinterSpencer from './winter-spencer.jpg';
+import CoderSpencer from './coder-spencer-min.jpg';
+import BusinessSpencer from './biz-spencer-min.png';
+import WinterSpencer from './winter-spencer-min.jpg';
 
 class AboutIndex extends Component {
   render() {

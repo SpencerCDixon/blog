@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from 'components/Avatar';
-import Spencer from './about/coder-spencer.jpg';
+import Spencer from './about/coder-spencer-min.jpg';
 import MailchimpForm from 'components/MailchimpForm';
 import HeaderLink from 'components/HeaderLink';
 import { Link } from 'react-router'
