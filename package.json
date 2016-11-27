@@ -48,7 +48,7 @@
   ],
   "scripts": {
     "build": "gatsby build",
-    "deploy": "npm run clean && npm run build && npm run netlify && open http://blog-staging.netlify.com/",
+    "deploy": "npm run clean && npm run build && npm run netlify && open http://spencerdixon.com/",
     "netlify": "netlify deploy public",
     "start": "gatsby develop",
     "clean": "rimraf public",

@@ -30,6 +30,7 @@ module.exports = React.createClass({
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link rel="icon" type="image/png" sizes="16x16" href={require("./favicon.ico")} />
           {head.title.toComponent()}
           {head.meta.toComponent()}
           <TypographyStyle typography={typography} />
