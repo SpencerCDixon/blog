@@ -6,6 +6,9 @@
 
 .header {
   color: $link;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+
   &:hover {
     color: $black;
   }

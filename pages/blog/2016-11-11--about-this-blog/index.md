@@ -15,8 +15,20 @@ get the most out of it, [feel free to skip ahead.](#getting-the-most-out-of-post
 
 ## Starting With Why
 My _Why_ has many layers.  Initially, I thought my _Why_ was to help separate my
-time from income.  Over the last couple years I've become a lot more aware of
-time.  
+time from income.  For the last year or so I've been [using this chrome extension
+Motivation]() it has made me way more present to how little time we have on this
+planet.  The conclusion I came to is that the amount of time I'd have to put
+into this blog to make it profitable is somewhat absurd.
+
+So I asked why again. 
+
+And again.
+
+The next layer I peeled back was another selfish one: _to learn_.  The philosophy
+"To teach is to learn" has been distilled into my psyche.  By writing blog posts
+about educational content not only could I improve my writing skills but it
+would also force me to understand the programming material at a deeper level.
+
 
 ## Design Inspiration
 
