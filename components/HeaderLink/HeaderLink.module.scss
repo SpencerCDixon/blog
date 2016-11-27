@@ -8,6 +8,8 @@
   color: $link;
   font-weight: 700;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &:hover {
     color: $black;
