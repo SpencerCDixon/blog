@@ -3,6 +3,7 @@ layout: post
 title: The Stages of Vim
 date: 2015-01-25 
 tags: vim 
+path: "/blog/the-stages-of-vim.html"
 ---
 
 So you're finally fed up with alerts asking you to buy Sublime text or random errors with Atom?  Time to transition to the editor that has been around for over 30 years Vi Improved, also known as VIM. Getting started with VIM can be difficult so I decided to write a post on how I approached it.  The first thing to understand is learning VIM is NOT easy but once you do it you will never regret it.  Here are the stages of VIM:

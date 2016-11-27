@@ -2,6 +2,7 @@
 layout: post
 title: Converting Octopress To Middleman With Vim Macros
 date: 2015-08-16 
+path: "/blog/converting-octopress-to-middleman-with-vim-macros.html"
 tags: vim, middleman
 ---
 

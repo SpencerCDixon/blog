@@ -2,6 +2,7 @@
 layout: post
 title: Integrating Flowdock Push API Into Rails
 date: 2015-01-05 
+path: "/blog/integrating-flowdock-push-api-into-rails.html"
 tags: rails, ruby, API, flowdock
 ---
 

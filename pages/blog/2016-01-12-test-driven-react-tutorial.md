@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Test Driven React Tutorial
-path: "/blog/test-driven-react-tutorial/"
+path: "/blog/test-driven-react-tutorial.html"
 date: 2016-01-12 
 tags: tutorial, testing, react, javascript
 description: "A tutorial for setting up a test driven react environment"

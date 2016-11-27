@@ -19,7 +19,7 @@ function BookIndex({  }) {
         </Box>
 
         <Box my={2}>
-          <h1>What will you learn:</h1>
+          <h1>What you will learn:</h1>
           <ul>
             <li>How to publish React components to npm</li>
             <li>How to take advantage of the yarn package manager</li>

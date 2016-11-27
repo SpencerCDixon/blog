@@ -2,6 +2,7 @@
 layout: post
 title: Counter Caching in Rails
 date: 2015-01-03 
+path: "/blog/counter-caching-in-rails.html"
 tags: rails, ruby
 ---
 

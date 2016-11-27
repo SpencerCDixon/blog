@@ -3,6 +3,7 @@ layout: post
 title: Gosu Tutorial
 date: 2014-10-11 
 tags: ruby, gosu, tutorials
+path: "/blog/gosu-tutorial.html"
 featured: true
 ---
 

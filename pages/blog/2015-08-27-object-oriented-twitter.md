@@ -1,6 +1,7 @@
 ---
 title: Object Oriented Twitter
 date: 2015-08-27 
+path: "/blog/object-oriented-twitter.html"
 tags: ruby, tutorials, OOP
 ---
 

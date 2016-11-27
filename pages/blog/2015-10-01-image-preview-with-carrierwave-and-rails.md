@@ -2,6 +2,7 @@
 layout: post
 title: Image Preview With Carrierwave And Rails
 date: 2015-10-01 
+path: "/blog/image-preview-with-carrierwave-and-rails.html"
 tags: ruby, tutorials, rails
 ---
 

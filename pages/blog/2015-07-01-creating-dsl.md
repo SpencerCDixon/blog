@@ -2,6 +2,7 @@
 layout: post
 title: Creating a DSL in Ruby
 date: 2015-07-01
+path: "/blog/creating-dsl.html"
 tags: ruby, rails
 ---
 
