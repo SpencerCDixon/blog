@@ -10,8 +10,7 @@ Questions can be very powerful.  They have the ability to alter our lives
 permanently.  The right question can get you out of a rut or on the path to a
 much more fulfilling life.
 
-> You cannot change your destination overnight, but you can change your
-> direction overnight. -Jim Rohn
+> Judge a man by his questions rather than his answers. - Pierre-Marc-Gaston
 
 I've noticed the quality of my life, relationships, and interactions are very
 closely aligned with the quality of questions I'm asking myself and others.  I
