@@ -16,7 +16,7 @@ class NavBar extends Component {
         }}
       >
         <div className="topNav">
-          <Box> <Logo /> </Box>
+          <Box className="logo"> <Logo /> </Box>
           <Box className="topNav-separator" flexAuto />
           <Flex>
             <Box px={1}> <NavLink to="/blog/">Blog</NavLink> </Box>
