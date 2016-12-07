@@ -3,9 +3,9 @@ import css from './Button.module.scss';
 
 function Button({ children, ...rest }) {
   return (
-    <a className={css.button} {...rest}>
+    <button className={css.button} {...rest}>
       <span className={css.text}>{children}</span>
-    </a>
+    </button>
   );
 }
 

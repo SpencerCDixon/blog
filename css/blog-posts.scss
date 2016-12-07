@@ -20,6 +20,11 @@
 
   .header-link {
     font-size: 0.7em;
+    box-shadow: none;
+    border-bottom: none;
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   .alert-box {
@@ -56,5 +61,18 @@
   img {
     display: block;
     margin: 0 auto;
+  }
+
+  a {
+    border-bottom: 2px solid rgb(207, 243, 255);
+    text-decoration: none;
+    transition: box-shadow ease 160ms;
+    box-shadow: inset 0 -9px 0 rgb(238, 251, 255);
+    color: black;
+
+    &:hover {
+      // color: $black;
+      box-shadow: inset 0 -1.2em 0 rgb(207, 243, 255);
+    }
   }
 }
