@@ -12,6 +12,10 @@ At the last [Boston React Meetup](https://www.meetup.com/boston-react/) I gave a
 from the ground up.  Many people found it useful so I decided to record a
 screencast version for others who might be interested.  
 
+:::info
+You can find the source code to the [original talk here](https://github.com/SpencerCDixon/redux-light/blob/master/redux-light.js)
+:::
+
 @[vimeo](196092601)
 
 Here is the source code from the video:
