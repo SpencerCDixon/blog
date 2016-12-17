@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import Helmet from 'react-helmet';
 import Avatar from 'components/Avatar';
 import { Link } from 'react-router';
 import { Flex, Box } from 'reflexbox';
@@ -10,6 +11,8 @@ class AboutIndex extends Component {
   render() {
     return (
       <Flex flexColumn align="center">
+        <Helmet title="Spencer Dixon | About" />
+
         <h1 className="fade-in">Hi, I'm Spencer.</h1>
         <p>And you don't know me... yet.</p>
         <Flex wrap justify="center" mb={3}>
