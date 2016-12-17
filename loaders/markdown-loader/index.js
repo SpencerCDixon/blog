@@ -36,6 +36,10 @@ var md = markdownIt({
   .use(require('markdown-it-link-attributes'), {
     target: '_blank',
   })
+  .use(require('markdown-it-video', {
+    youtube: { width: 750, height: 390 },
+    vimeo: { width: 750, height: 500 },
+  }))
   .use(require('markdown-it-container'), 'tip', {
     validate: name => name.trim().length,
     render: (tokens, idx) => {

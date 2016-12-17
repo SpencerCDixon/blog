@@ -50,10 +50,6 @@ export default class Index extends React.Component {
             Learn more about this blog
           </HeaderLink>
 
-          <HeaderLink to="book/">
-            Get updates on the book I'm writing: <strong>Building A React UI Kit</strong>
-          </HeaderLink>
-
           <HeaderLink to="now/">
             See what I'm up to Now.
           </HeaderLink>

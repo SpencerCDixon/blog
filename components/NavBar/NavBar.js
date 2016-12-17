@@ -22,7 +22,6 @@ class NavBar extends Component {
             <Box px={1}> <NavLink to="/blog/">Blog</NavLink> </Box>
             <Box px={1}> <NavLink to="/about/"> About </NavLink> </Box>
             <Box px={1}> <NavLink to="/now/">Now</NavLink> </Box>
-            <Box px={1}> <NavLink to="/book/">Book</NavLink> </Box>
           </Flex>
         </div>
       </Headroom>

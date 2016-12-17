@@ -49,7 +49,9 @@ to deeper, more meaningful conversations.
 * Do you think you're introverted or extroverted?  Why do you think that?
 * What are the most important things you'd like to accomplish this year?
 * What is a common misconception people have about you?
-* If married, what is the secret to your marriage?  What advice would you give someone my age who wants to get married one day?
+* (If married) What is the secret to your marriage?  What advice would you give someone my age who wants to get married one day?
+* If you had to give a TED talk about something you weren't known for, what
+    topic would you choose?
 
 ## Stoic Questions
 

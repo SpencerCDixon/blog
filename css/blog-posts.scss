@@ -71,8 +71,12 @@
     color: black;
 
     &:hover {
-      // color: $black;
       box-shadow: inset 0 -1.2em 0 rgb(207, 243, 255);
     }
+  }
+
+  .embed-responsive-item {
+    width: 100%;
+    height: 600px;
   }
 }

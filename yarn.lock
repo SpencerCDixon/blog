@@ -3880,6 +3880,10 @@ markdown-it-link-attributes:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-1.0.0.tgz#8da1ca1729f0fa16c65615b0b1075b79c8371a2e"
 
+markdown-it-video:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-video/-/markdown-it-video-0.4.0.tgz#1f51a3471456a2509a3820dced9ad1ce961bdb64"
+
 markdown-it@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-7.0.1.tgz#f12d8b88a93e64254348dfd183bd70bf60567a42"

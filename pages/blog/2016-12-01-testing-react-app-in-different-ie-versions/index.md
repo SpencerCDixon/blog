@@ -5,7 +5,6 @@ layout: post
 description: A tutorial on setting up virtual box to test UI's in different browsers
 tags: 'react, tutorial, vm'
 path: /blog/testing-react-app-in-different-ie-versions/
-featured: true
 ---
 
 
