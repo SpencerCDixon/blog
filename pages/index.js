@@ -24,7 +24,7 @@ export default class Index extends React.Component {
         <Flex flexColumn align="center">
           <h1 className="fade-in" style={{fontSize: '3em'}}> Master Your Machine </h1>
           <p>
-            Articles, screencasts, and tutorials to level up your React, Redux, and general programming skills.
+            Articles, screencasts, and tutorials to level up your React, Golang, and general programming skills.
           </p>
 
           <Box mt={3}>
