@@ -18,7 +18,7 @@ class Avatar extends Component {
       <Flex flexColumn {...rest}>
         <Box>
           {!this.state.loaded && <div style={{width: 200, height: 200}} />}
-          <img src={src} alt={alt} className={css.avatar} style={imageStyle} onLoad={this.handleLoad} />
+          <img src={src} alt={alt} className={css.avatar} style={imageStyle} onLoad={this.handleLoad} onError={this.handleLoad} />
         </Box>
         <Box className={css.subtitle}>
           {subtitle}
