@@ -4,6 +4,7 @@ date: '2017-01-05T12:03:36.439Z'
 layout: post
 description: "How to set up integration testing with react apps and tips for writing effective tests."
 tags: 'testing, react, integration, tutorial'
+draft: true
 path: /blog/effectively-integration-testing-react-apps/
 ---
 
