@@ -8,7 +8,7 @@ path: /blog/deploy-buffalo-go-app-to-heroku/
 ---
 
 The last few weeks I've been really excited about leveling up in Golang due to a new web
-framework called [Buffalo](gobuffalo.io).  It promises the speed of Rails
+framework called [Buffalo](http://gobuffalo.io/docs/getting-started).  It promises the speed of Rails
 development with the speed of Golang.  Exactly what I've been looking for in
 future backend work.
 
