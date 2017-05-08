@@ -12,35 +12,44 @@ class NowIndex extends Component {
         <h1 className="fade-in">Now.</h1>
 
         <Flex style={{maxWidth: 650}} flexColumn>
+          <p><em><small>Last updated 5/8/2017</small></em></p>
+
           <p>
-            Just got back to Cambridge after spending the last 2 months living on a <a href="http://cranberryisles.com/index.html" target="_blank">small island in Maine.</a>
+            My company <a href="https://wasabi.com/" target="_blank">Wasabi</a> just released our new cloud storage product!  
           </p>
 
           <p>
-
-            I committed to running all 37 columns of the Harvard Stadium so I've been training for that.
+            It's been an incredible journey thus far working with some of the most intelligent 
+            and experienced engineers I've ever met.  What excites me most about Wasabi is 
+            the potential for new start ups to form due to our low storage costs.  <a href="https://medium.com/@wasabi_cloud/welcome-to-wasabi-hot-storage-4e06d58e377c" target="_blank">David Friend's (CEO)
+              mission of turning storage into a commodity is very inspiring and makes a ton of sense logically.</a>
           </p>
 
           <p>
-            Side projects I've been working on in my spare time:
+            Now that Boston's no longer a frozen tundra I've been able to get outside and run!
+            I always forget how happy warm weather and exercise makes me 😄. 
           </p>
 
-          <ol>
+          <p>Side projects and other recent interests:</p>
+
+          <ul>
             <li>
-              <strong>Life API</strong> - an app to help me track all sorts of data and metrics about my life.  It's called Roots, 
-              as in the roots required to live a fulfilling life.  <a href="https://dashboard.spencerdixon.com/sign_up" target="_blank">If you want to create an account and check it out you can do that
-              here.</a>
+              <a href="https://github.com/SpencerCDixon/oak-lang">
+                I've been building a programming language called Oak to learn about lexers, parsers, and compilers.  
+                Oak has enabled me to level up in Golang while simultaneously learn fundamental CS skills.
+              </a>
             </li>
+
             <li>
-              <strong>React UI Kit eBook</strong> - an eBook to teach people how to build a UI Kit in React.  Learn more about the book &nbsp;
-              <Link to={prefixLink('/book/')}>
-                and sign up for updates!
-              </Link>
+              Been watching WAY too many <a href="https://www.youtube.com/user/caseyneistat">Casey Neistat</a> videos.  
+              My roommate and I have also been watching lots of wood/metalworking videos.  <a href="https://www.youtube.com/user/jimmydiresta">Here is a guy who builds some very cool things.</a>
             </li>
+
             <li>
-              <strong>Blog Redesign</strong> - you're reading it now!  Hope you like the new look :-)
+              I've started condensing and publishing all my notes in a public <a href="https://github.com/SpencerCDixon/notes">git repo.</a>  Eventually I'm probably going to convert these notes into a wiki but haven't decided on a platform yet.
+              Been toying with the idea of building my own modern wiki platform #engineer_problems.
             </li>
-          </ol>
+          </ul>
         </Flex>
       </Flex>
     );

@@ -39,17 +39,23 @@ class AboutIndex extends Component {
           </Box>
         </Flex>
         <Flex style={{maxWidth: 650}} flexColumn>
-          <p>
-            I'm an entrepreneur, hacker, educator, and life long learner.
-            Find out what I'm up to <Link to="/now/">now</Link>, <a href="https://twitter.com/SpencerCDixon">follow me on twitter</a>, and check out some of my <a href="https://github.com/SpencerCDixon">open source projects.</a>
+          <p> 
+            My name is Spencer (<a href="https://twitter.com/SpencerCDixon" target="_blank">@SpencerCDixon</a>).
+            I'm an engineer at <a href="https://wasabi.com/">Wasabi</a> helping to make hot cloud storage a commodity.
           </p>
 
           <p>
-            I've been building websites since I was 14 and started my first company <a href="http://www.greatlakesaquaponics.com/">Great Lakes Aquaponics</a> when I was 15.  As a full stack developer I'm interested in just about every stage of the product life cycle.
+            Find out what I'm up to <Link to="/now/">now</Link>, connect with me <a href="https://www.linkedin.com/in/spencercdixon/">on LinkedIn</a>, and check out some of my <a href="https://github.com/SpencerCDixon">open source projects.</a>
           </p>
 
           <p>
-            In the past I was a bootcamp instructor at <a href="https://www.launchacademy.com/" target="_blank">Launch Academy</a> where I taught eager students how to code with Ruby and Rails.  After Launch, I joined a startup called Smart Scheduling (later known as Arsenal Health) which built predictive models to figure out when patients weren't going to show to their doctors appointments.  Smart Scheduling was <a href="http://newsroom.athenahealth.com/phoenix.zhtml?c=253091&p=irol-newsArticle&ID=2157141" target="_blank">acquired by athenahealth</a> in April, 2016.  While at athena I rebuilt their streamlined UI Kit into React and used that UI Kit to integrate Smart Scheduling into their flagship product (athenaNet).  Currently, I'm a frontend engineer at another startup called <a href="http://www.bluearchive.com/" target="_blank">BlueArchive</a>.
+            I've been building websites for 10+ years and started my first company <a href="http://www.greatlakesaquaponics.com/" target="_blank">Great Lakes Aquaponics</a> when I was 15.  
+            As a full stack developer/entrepreneur I'm interested in just about every stage of the product life cycle.
+          </p>
+
+          <p>
+            In the past I was a bootcamp instructor at <a href="https://www.launchacademy.com/" target="_blank">Launch Academy</a> where I taught eager students how to code with Ruby and Rails.  After teaching, I joined a startup called Smart Scheduling (later known as Arsenal Health) which built predictive models to figure out when patients weren't going to show to their doctors appointments.  Smart Scheduling was <a href="http://newsroom.athenahealth.com/phoenix.zhtml?c=253091&p=irol-newsArticle&ID=2157141" target="_blank">acquired by athenahealth</a> in April, 2016.  
+
           </p>
 
           <p>
