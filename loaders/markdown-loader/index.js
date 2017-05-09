@@ -33,9 +33,7 @@ var md = markdownIt({
     permalinkClass: 'header-link',
     permalinkSymbol: '🔗',
   })
-  .use(require('markdown-it-link-attributes'), {
-    target: '_blank',
-  })
+  // .use(require('markdown-it-link-attributes'), { })
   .use(require('markdown-it-video', {
     youtube: { width: 750, height: 390 },
     vimeo: { width: 750, height: 500 },
