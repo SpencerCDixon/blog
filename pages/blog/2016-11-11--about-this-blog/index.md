@@ -7,7 +7,8 @@ path: "/blog/about-this-blog/"
 ---
 
 This is a self-referential blog post about this blog (...I've been reading too much [GEB](https://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567)).  A post about how to get the most from other posts.
-In the spirit of Simon Sinek, I'll start with **why**.  Then
+In the spirit of [Simon
+Sinek](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action), I'll start with **why**.  Then
 I'll cover **how** I created this blog and tips for getting the **most out of it**.
 Finally, I'll delve into **where** it's going.  
 
@@ -43,7 +44,8 @@ Back to the drawing board.  **Why do this?**
 I thought about why I got into programming in the first place.  My primary
 reasons were for scalability of inspiration and to acquire mastery of my machine.  In management and sales, even if I
 was the best manager in my company, I could only positively impact maybe 200
-sales representatives a year.  Programming gave me access to billions.  
+sales representatives a year.  Programming gave me access to billions of people
+not hundreds.  
 
 There was also this extreme desire to truly master my machine.  To be able to
 get my computer to _work for me_ and not just _with me_.  To think of an idea
@@ -52,9 +54,10 @@ something I wished everyone had.
 
 And there it was.  My _Why_.
 
-_My driving force for writing this blog is to put myself out
-there, to be vulnerable, and along the way hopefully inspire and motivate other
-people to learn new things and master their machines._ 
+_My driving force for writing this blog is to learn in public, to be vulnerable, 
+and along the way hopefully inspire and motivate other
+people to develop new skills and master their machines.  If I can do it so can
+you._ 
 
 ## Getting The Most Out Of Posts
 
@@ -76,7 +79,7 @@ Red alert boxes have information you should **definitely** read because it could
 be very important or dangerous.
 
 ::: warning
-Never type `rm -rf ~`. Understand what commands do before copy pasting from the
+Never type `rm -rf ~`. Understand what commands do before copy/pasting from the
 internet!
 :::
 
@@ -98,8 +101,7 @@ use to spread the love.  If a post was useful and helped you solve a problem,
 consider paying it forward and sharing with others :smile:.  Sharing is caring!  
 
 Absolutely hate and disagree with the things I'm writing?  No problem.  Leave a
-comment and I'll gladly consider your point of view.  Apply the "Golden Rule" to
-comments.  If you're a troll I'll just ignore you.
+comment and I'll gladly consider your point of view.  If you're a troll I'll just ignore you.
 
 ## Design Inspiration
 There is clarity in simplicity.  When deciding how to design the blog I wanted
