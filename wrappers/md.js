@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import Helmet from "react-helmet"
-import { config } from 'config'
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+import { config } from 'config';
 import Tags from 'components/Tags';
 import ReactDisqusThread from 'react-disqus-thread';
 import Button from 'components/Button';
@@ -13,41 +13,47 @@ import ShareIcons from 'components/ShareIcons';
 
 export default class MDWrapper extends Component {
   state = {
-    isShowingComments: false
-  }
+    isShowingComments: false,
+  };
 
   handleToggleComments = () => {
-    this.setState({isShowingComments: !this.state.isShowingComments});
-  }
+    this.setState({ isShowingComments: !this.state.isShowingComments });
+  };
 
-  render () {
-    const post = this.props.route.page.data
+  render() {
+    const post = this.props.route.page.data;
     const { title, description, tags } = post;
     const finalTags = tags ? tags.split(',') : [];
-    const buttonText = this.state.isShowingComments ? 'Hide Comments' : 'Show Comments';
+    const buttonText = this.state.isShowingComments
+      ? 'Hide Comments'
+      : 'Show Comments';
 
     return (
       <div className="markdown">
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
           meta={[
-            { name: "description", content: description || title },
-            { name: "twitter:card", value: "summary" },
-            { name: "twitter:creator", content: "@SpencerCDixon" },
-            { name: "twitter:title", content: title },
-            { name: "twitter:description", content: description || title },
-            { property: "og:title", content: title },
-            { property: "og:type", content: "article" },
-            { property: "og:url", content: `http://spencerdixon.com${post.path}` },
-            { property: "og:description", content: description || title },
+            { name: 'description', content: description || title },
+            { name: 'twitter:card', value: 'summary' },
+            { name: 'twitter:creator', content: '@SpencerCDixon' },
+            { name: 'twitter:title', content: title },
+            { name: 'twitter:description', content: description || title },
+            { property: 'og:title', content: title },
+            { property: 'og:type', content: 'article' },
+            {
+              property: 'og:url',
+              content: `http://spencerdixon.com${post.path}`,
+            },
+            { property: 'og:description', content: description || title },
           ]}
         />
 
-        <h1 style={{
-          marginBottom: 0,
-          fontFamily: fonts.tertiary,
-          fontWeight: fonts.xThin,
-        }}>
+        <h1
+          style={{
+            marginBottom: 0,
+            fontFamily: fonts.tertiary,
+            fontWeight: fonts.xThin,
+          }}>
           {post.title}
         </h1>
 
@@ -56,10 +62,13 @@ export default class MDWrapper extends Component {
             <Date time={post.date} />
           </Box>
           <Box>
-            <ReadTime content={post.body} style={{
-              color: colors.lightGray, 
-              fontSize: fonts.small
-            }} />
+            <ReadTime
+              content={post.body}
+              style={{
+                color: colors.lightGray,
+                fontSize: fonts.small,
+              }}
+            />
           </Box>
         </Flex>
 
@@ -71,24 +80,26 @@ export default class MDWrapper extends Component {
         </Flex>
 
         <Flex mt={3} justify="center">
-          <ShareIcons title={title} desc={description} url={`http://spencerdixon.com${post.path}`} />
+          <ShareIcons
+            title={title}
+            desc={description}
+            url={`http://spencerdixon.com${post.path}`}
+          />
         </Flex>
 
         <Flex mt={3} justify="center">
-          <Button onClick={this.handleToggleComments}>
-            {buttonText}
-          </Button>
+          <Button onClick={this.handleToggleComments}>{buttonText}</Button>
         </Flex>
 
-        {this.state.isShowingComments && 
+        {this.state.isShowingComments && (
           <ReactDisqusThread
             shortname="spencerdixon"
             identifier={post.title}
             title={post.title}
             url={`http://spencerdixon.com${post.path}`}
           />
-        }
+        )}
       </div>
-    )
+    );
   }
 }

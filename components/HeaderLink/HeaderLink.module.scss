@@ -1,4 +1,4 @@
-@import "css/_variables";
+@import 'css/_variables';
 
 .link {
   text-decoration: none;
@@ -6,10 +6,10 @@
 
 .header {
   color: $link;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  // text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 
   &:hover {
     color: $black;
