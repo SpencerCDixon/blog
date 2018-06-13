@@ -5,12 +5,7 @@ import Helmet from 'react-helmet';
 import { config } from 'config';
 import { Flex, Box } from 'reflexbox';
 import { fonts } from 'css';
-import styles from './home.module.scss';
-
-import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
-import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
-import FAIcon from '@fortawesome/react-fontawesome';
+import SocialIcons from 'components/SocialIcons';
 
 export default class Index extends React.Component {
   render() {
@@ -35,28 +30,9 @@ export default class Index extends React.Component {
               src="https://avatars2.githubusercontent.com/u/7471018?s=460&v=4"
               alt="Spencer Dixon"
             />
-
-            <Flex justify="space-between" mt={2} style={{ minWidth: 200 }}>
-              <a
-                target="_blank"
-                className={styles.social}
-                href="https://twitter.com/SpencerCDixon">
-                <FAIcon icon={faTwitter} size="2x" />
-              </a>
-              <a
-                target="_blank"
-                className={styles.social}
-                href="https://github.com/SpencerCDixon">
-                <FAIcon icon={faGithub} size="2x" />
-              </a>
-              <a
-                target="_blank"
-                className={styles.social}
-                href="https://www.instagram.com/spencercdixon/">
-                <FAIcon icon={faInstagram} size="2x" />
-              </a>
-            </Flex>
+            <SocialIcons />
           </Flex>
+
           <h1 className="fade-in" style={{ fontSize: '3em' }}>
             Fancy seeing you here...
           </h1>

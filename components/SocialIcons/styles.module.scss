@@ -2,7 +2,10 @@
 
 .social {
   color: $black;
+  box-shadow: none;
+  border-bottom: none;
   &:hover {
     color: lighten($black, 20%);
+    box-shadow: none;
   }
 }
