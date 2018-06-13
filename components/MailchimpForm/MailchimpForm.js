@@ -10,7 +10,6 @@ const propTypes = {
   inline: PropTypes.bool.isRequired,
 };
 const defaultProps = {
-  inline: false,
   id: '666e212a4d',
 };
 
@@ -30,80 +29,27 @@ class MailchimpForm extends Component {
   render() {
     const { id } = this.props;
 
-    if (this.props.inline) {
-      return (
-        <Flex>
-          <form
-            action={`//spencerdixon.us11.list-manage.com/subscribe/post?u=019dc2164dbdc16d844cf6dc2&amp;id=${id}`}
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            className={css.form}
-            style={{ width: '100%' }}
-            target="_blank"
-            noValidate>
-            <Flex
-              id="mc_embed_signup_scroll"
-              style={{ width: '100%' }}
-              wrap
-              justify="center">
-              <Box my={1} className="mc-field-group">
-                <input
-                  type="email"
-                  onChange={this.updateEmail}
-                  value={this.state.email}
-                  name="EMAIL"
-                  className={css.input}
-                  id="mce-EMAIL"
-                  placeholder="your@email.com"
-                />
-              </Box>
-
-              <div id="mce-responses" className="clear">
-                <div
-                  className="response"
-                  id="mce-error-response"
-                  style={{ display: 'none' }}
-                />
-                <div
-                  className="response"
-                  id="mce-success-response"
-                  style={{ display: 'none' }}
-                />
-              </div>
-
-              <div style={{ position: 'absolute', left: -5000 }}>
-                <input
-                  type="text"
-                  name={`b_019dc2164dbdc16d844cf6dc2_${id}`}
-                  tabIndex="-1"
-                  value=""
-                />
-              </div>
-
-              <Box flex align="center" ml={2}>
-                <CTAButton id="mc-embedded-subscribe">Subscribe</CTAButton>
-              </Box>
-            </Flex>
-          </form>
-        </Flex>
-      );
-    }
-
     return (
-      <Flex className={css.container} justify="space-around" wrap>
-        <Box flex align="center" mr={2}>
-          <Avatar
-            src="https://avatars2.githubusercontent.com/u/7471018?s=460&v=4"
-            alt="Spencer"
-            imageStyle={{ maxWidth: 120 }}
-          />
-        </Box>
+      <Flex style={{ width: '100%' }} flexColumn justify="space-around">
+        <div className={css.separator} />
+
+        <h2>Can I be honest? I want your email.</h2>
+        <p>
+          I <strong>love</strong> teaching and writing new content but sometimes
+          find it hard to justify.
+        </p>
+
+        <p>
+          Getting your email motivates me to spend more time creating awesome
+          content and notifies you when new posts or screencasts come out.
+        </p>
+
+        <p>
+          I will <strong>never</strong> share your email or spam. Expect less
+          than 5 emails a year and feel free to unsubscribe at any time.
+        </p>
+
         <Flex id="mc_embed_signup" flexColumn align="center" order={1}>
-          <h4>
-            Want More? Get fresh articles, screencasts, and tutorials sent to
-            your inbox.
-          </h4>
           <form
             action={`//spencerdixon.us11.list-manage.com/subscribe/post?u=019dc2164dbdc16d844cf6dc2&amp;id=${id}`}
             method="post"
@@ -118,18 +64,6 @@ class MailchimpForm extends Component {
               id="mc_embed_signup_scroll"
               style={{ width: '100%' }}
               justify="center">
-              <Box my={1} className="mc-field-group" style={{ width: '100%' }}>
-                <input
-                  type="text"
-                  onChange={this.updateName}
-                  value={this.state.name}
-                  name="FNAME"
-                  className={css.input}
-                  id="mce-FNAME"
-                  placeholder="First name"
-                />
-              </Box>
-
               <Box my={1} className="mc-field-group">
                 <input
                   type="email"
@@ -165,7 +99,9 @@ class MailchimpForm extends Component {
               </div>
 
               <Box flex justify="flex-end" my={1}>
-                <CTAButton id="mc-embedded-subscribe">Subscribe</CTAButton>
+                <CTAButton id="mc-embedded-subscribe">
+                  Keep Spencer Motivated
+                </CTAButton>
               </Box>
             </Flex>
           </form>

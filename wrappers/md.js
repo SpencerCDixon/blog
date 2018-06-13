@@ -17,9 +17,6 @@ export default class MDWrapper extends Component {
     const post = this.props.route.page.data;
     const { title, description, tags } = post;
     const finalTags = tags ? tags.split(',') : [];
-    const buttonText = this.state.isShowingComments
-      ? 'Hide Comments'
-      : 'Show Comments';
 
     return (
       <div className="markdown">

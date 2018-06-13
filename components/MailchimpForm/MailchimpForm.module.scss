@@ -1,12 +1,27 @@
 @import 'css/_variables';
 
 .container {
-  padding: 20px;
-  // border: 2px solid $black;
-  width: 100%;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
-  border-radius: 3px;
+  // padding: 20px;
+  // // border: 2px solid $black;
+  // width: 100%;
+  // box-shadow: hsla(222, 55%, 46%, 0.06) 0 2px 6px,
+  // hsla(222, 55%, 46%, 0.03) 0 6px 12px, hsla(222, 55%, 46%, 0.03) 0 12px 24px,
+  // hsla(222, 55%, 46%, 0.03) 0 12px 48px, hsla(222, 55%, 46%, 0.03) 0 12px 96px;
+  // border-radius: 3px;
+}
+
+.separator {
+  margin: 1.5em 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.separator::before {
+  display: inline-block;
+  content: '...';
+  text-align: center;
+  letter-spacing: 0.6em;
 }
 
 .form {

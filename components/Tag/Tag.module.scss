@@ -1,15 +1,12 @@
-@import "css/_variables";
+@import 'css/_variables';
 
 .tag {
-  background: rgba(0,0,0,0.1);
+  background: $black;
+  color: white;
   padding: $spacing-1;
   font-family: $secondary;
-  font-weight: $xThin;
+  font-weight: bold;
   font-size: $small;
-  cursor: pointer;
   border-radius: 3px;
-  text-transform: capitalize;
-  &:hover {
-    background: rgba(0,0,0,0.2);
-  }
+  text-transform: uppercase;
 }
