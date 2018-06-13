@@ -5,6 +5,7 @@ layout: post
 description: Notes from the course I took on how to safely use a table saw.
 tags: woodworking
 path: /blog/learning-table-saw/
+draft: true
 ---
 
 * Intro

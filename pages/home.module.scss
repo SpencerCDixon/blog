@@ -1,0 +1,8 @@
+@import 'css/_variables';
+
+.social {
+  color: $black;
+  &:hover {
+    color: lighten($black, 20%);
+  }
+}
