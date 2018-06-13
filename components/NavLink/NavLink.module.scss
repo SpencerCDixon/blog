@@ -1,4 +1,4 @@
-@import "css/_variables.scss";
+@import 'css/_variables.scss';
 
 .active {
   color: $black !important;
@@ -8,7 +8,7 @@
   color: $lightGray;
   text-decoration: none;
   font-family: $secondary;
-  font-weight: $xThin;
+  font-weight: 300;
   font-size: $nav;
   &:hover {
     color: $black;

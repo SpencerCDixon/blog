@@ -10,23 +10,13 @@ import { Flex, Box } from 'reflexbox';
 import { colors, fonts } from 'css';
 import MailchimpForm from 'components/MailchimpForm';
 import ShareIcons from 'components/ShareIcons';
+import SocialIcons from 'components/SocialIcons';
 
 export default class MDWrapper extends Component {
-  state = {
-    isShowingComments: false,
-  };
-
-  handleToggleComments = () => {
-    this.setState({ isShowingComments: !this.state.isShowingComments });
-  };
-
   render() {
     const post = this.props.route.page.data;
     const { title, description, tags } = post;
     const finalTags = tags ? tags.split(',') : [];
-    const buttonText = this.state.isShowingComments
-      ? 'Hide Comments'
-      : 'Show Comments';
 
     return (
       <div className="markdown">
@@ -80,25 +70,8 @@ export default class MDWrapper extends Component {
         </Flex>
 
         <Flex mt={3} justify="center">
-          <ShareIcons
-            title={title}
-            desc={description}
-            url={`http://spencerdixon.com${post.path}`}
-          />
+          <SocialIcons />
         </Flex>
-
-        <Flex mt={3} justify="center">
-          <Button onClick={this.handleToggleComments}>{buttonText}</Button>
-        </Flex>
-
-        {this.state.isShowingComments && (
-          <ReactDisqusThread
-            shortname="spencerdixon"
-            identifier={post.title}
-            title={post.title}
-            url={`http://spencerdixon.com${post.path}`}
-          />
-        )}
       </div>
     );
   }
