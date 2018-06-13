@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import Avatar from 'components/Avatar';
+import Separator from 'components/Separator';
 import { Link } from 'react-router';
 import { Flex, Box } from 'reflexbox';
 import SocialIcons from 'components/SocialIcons';
@@ -9,7 +10,7 @@ import BusinessSpencer from './biz-spencer-min.png';
 import WinterSpencer from './winter-spencer-min.jpg';
 
 const Question = ({ children }) => (
-  <p style={{ fontWeight: 'bold' }}>{children}</p>
+  <h3 style={{ fontWeight: 'bold' }}>{children}</h3>
 );
 
 class AboutIndex extends Component {
@@ -83,7 +84,7 @@ class AboutIndex extends Component {
             in just about every stage of the product life cycle.
           </p>
 
-          <p>
+          <p style={{ marginBottom: 0 }}>
             If you're into personality tests I'm an{' '}
             <a
               href="https://www.16personalities.com/intj-personality"
@@ -98,10 +99,26 @@ class AboutIndex extends Component {
             <code>Innovator/Builder</code>.
           </p>
 
-          <p>The best way to reach me is on Twitter.</p>
+          <Separator />
+
+          <Question>What is the best way to reach you?</Question>
+          <p>The best way to reach me is probably Twitter.</p>
 
           <Question>Why is your hair blonde but your beard red!?</Question>
-          <p>No clue. I must be a mutant :) </p>
+          <p>No clue. I must be a mutant 😂 </p>
+
+          <Question>RFS's (Request for Spencers)</Question>
+          <p>
+            Want more photo versions of me? Weirdo. I've been thinking of adding
+            "Rockclimbing Spencer" soon. Stay tuned.
+          </p>
+
+          <Question>Do you ever do speaking engagements?</Question>
+          <p>
+            I do! If you're looking for a speaker on React, Rails, Go,
+            bootstrapping, or pair programming those are topics I love talking
+            about. Reach out on tweeeeter.
+          </p>
         </Flex>
       </Flex>
     );

@@ -37,7 +37,12 @@ export default class Index extends React.Component {
             Fancy seeing you here...
           </h1>
 
-          <p style={{ textAlign: 'left' }}>
+          <p
+            style={{
+              fontSize: '1.1em',
+              lineHeight: '1.8em',
+              textAlign: 'left',
+            }}>
             Welcome to my bubble on the internet 😄. Learn more{' '}
             <strong>
               <Link to="/about/">about me here</Link>{' '}

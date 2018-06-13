@@ -8,7 +8,7 @@ const options = {
   googleFonts: [
     {
       name: 'Raleway',
-      styles: ['300'],
+      styles: ['300', '800'],
     },
     {
       name: 'Open Sans',
@@ -16,13 +16,13 @@ const options = {
     },
     {
       name: 'Roboto',
-      styles: ['100', '700'],
+      styles: ['100', '300', '700'],
     },
   ],
   headerFontFamily: ['Raleway', 'sans-serif'],
-  headerWeight: '100',
+  headerWeight: '800',
   bodyFontFamily: ['Open Sans', 'sans-serif'],
-  bodyWeight: '300',
+  bodyWeight: '400',
   baseFontSize: '18px',
   baseLineHeight: 1.65,
   boldWeight: '700',

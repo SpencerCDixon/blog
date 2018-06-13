@@ -1,14 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import Avatar from 'components/Avatar';
 import CTAButton from 'components/CTAButton';
+import Separator from 'components/Separator';
 import Spencer from './coder-spencer.jpg';
 import css from './MailchimpForm.module.scss';
 import { Link } from 'react-router';
 import { Flex, Box } from 'reflexbox';
 
-const propTypes = {
-  inline: PropTypes.bool.isRequired,
-};
 const defaultProps = {
   id: '666e212a4d',
 };
@@ -31,7 +29,7 @@ class MailchimpForm extends Component {
 
     return (
       <Flex style={{ width: '100%' }} flexColumn justify="space-around">
-        <div className={css.separator} />
+        <Separator />
 
         <h2>Can I be honest? I want your email.</h2>
         <p>
@@ -111,6 +109,5 @@ class MailchimpForm extends Component {
   }
 }
 
-MailchimpForm.propTypes = propTypes;
 MailchimpForm.defaultProps = defaultProps;
 export default MailchimpForm;

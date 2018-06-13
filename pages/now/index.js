@@ -33,9 +33,10 @@ class NowIndex extends Component {
           <p>
             Quitting the "day job" and doing my own thing has been the best
             thing ever for my mental and physical health. I'm able to work
-            better hours to help with hand pain. Since we're building a
-            lifestyle business and don't plan on raising money it's given us a
-            lot of freedom to do things like yoga and rockclimb during the day.
+            better hours to help with hand pain and oddly enough am way less
+            stressed. Since we're building a lifestyle business and don't plan
+            on raising money it's given us a lot of freedom to do things like
+            yoga and rockclimb during the day.
           </p>
 
           <p>Other notable events</p>
@@ -62,6 +63,13 @@ class NowIndex extends Component {
                 href="https://www.instagram.com/p/Bj25gCoFx0-/?taken-by=spencercdixon"
                 target="_blank">
                 see the before and after photo here.
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://open.spotify.com/track/3aIhJDHxr1kgTSnutJxPTH?si=VwIDoQDxQD-VSonivP7fhA"
+                target="_blank">
+                Latest head bobber I've been obsessed with.
               </a>
             </li>
           </ul>
